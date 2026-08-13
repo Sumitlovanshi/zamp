@@ -1,0 +1,9486 @@
+{
+ "cord-test-000": {
+  "cells": {
+   "row0.price": {
+    "value": "60.000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "-60.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "60.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "5.455",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "60.000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-001": {
+  "cells": {
+   "row0.price": {
+    "value": "17.500",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "46.000",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "27.500",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "91.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "91.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-002": {
+  "cells": {
+   "row0.price": {
+    "value": "24,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "72,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "28,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-003": {
+  "cells": {
+   "row0.price": {
+    "value": "11,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "11,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "11,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "11,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 3
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-004": {
+  "cells": {
+   "row0.price": {
+    "value": "82,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "61,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "51,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "200,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "25,400",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.discount": {
+    "value": "19,400",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "194,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "174,600",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 8
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-005": {
+  "cells": {
+   "row0.price": {
+    "value": "28.182",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "31.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "28.182",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "2.818",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "31.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-006": {
+  "cells": {
+   "row0.price": {
+    "value": "13,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "24,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "9,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "4,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "46,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-007": {
+  "cells": {
+   "row0.price": {
+    "value": "100,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "100,909",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "10,091",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "111,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 5
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-008": {
+  "cells": {
+   "row0.price": {
+    "value": "45,455",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "45,455",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "4,545",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-009": {
+  "cells": {
+   "row0.price": {
+    "value": "36.000",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "36.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "14.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "36.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-010": {
+  "cells": {
+   "row0.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "17,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "3,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-011": {
+  "cells": {
+   "row0.price": {
+    "value": "230,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "230,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "230,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-012": {
+  "cells": {
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "120,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-013": {
+  "cells": {
+   "row0.price": {
+    "value": "43.636",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "43.636",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "3",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "3",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "52.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "700",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "4.664",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "51.300",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-014": {
+  "cells": {
+   "row0.price": {
+    "value": "38,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "55,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "65,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "35,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "25,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "20,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "200,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "18,565",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.service": {
+    "value": "17,850",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "238,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "25,585",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "281,435",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 6,
+   "UNVERIFIED": 12
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-015": {
+  "cells": {
+   "row0.price": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "38.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "70.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "7.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "63.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-016": {
+  "cells": {
+   "row0.price": {
+    "value": "59,091",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "4,545",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "30,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "63,636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "6,364",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-017": {
+  "cells": {
+   "row0.price": {
+    "value": "25,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "38,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "14,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "14,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "91,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 7,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 7,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-018": {
+  "cells": {
+   "row0.price": {
+    "value": "156.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "156.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "156.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "156.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-019": {
+  "cells": {
+   "row0.price": {
+    "value": "60.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "4",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "100.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "10",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "160.000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "16.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "176.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-020": {
+  "cells": {
+   "row0.price": {
+    "value": "64,500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "79,500",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "69,500",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "64,500",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "47,600",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "4",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "17,908",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "325,600",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "34,351",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "377,859",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 5,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-021": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.unitprice": {
+    "value": "35.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.unitprice": {
+    "value": "3.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 5
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-test-022": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "60,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-023": {
+  "cells": {
+   "row0.price": {
+    "value": "54,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "6",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "9,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "7,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "63,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-024": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "3",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 10
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-test-025": {
+  "cells": {
+   "row0.price": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "16,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "7,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "43,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-026": {
+  "cells": {
+   "row0.price": {
+    "value": "65.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "65.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.unitprice": {
+    "value": "4.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "65.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.unitprice": {
+    "value": "65.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 4
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-027": {
+  "cells": {
+   "row0.price": {
+    "value": "33,000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "23,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "61,600",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "56,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "5,600",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "61,600",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-028": {
+  "cells": {
+   "row0.price": {
+    "value": "194,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "75,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "18,450",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "369,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "38,745",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "426,195",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-029": {
+  "cells": {
+   "row0.price": {
+    "value": "10,909",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "54,455",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "12,727",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "12,727",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "13,636",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "28,182",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "132,636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "13,264",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "145,900",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 6,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-030": {
+  "cells": {
+   "row0.price": {
+    "value": "28,636",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "18,500",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "28,636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "2,864",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "31,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-031": {
+  "cells": {
+   "row0.price": {
+    "value": "85,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "85,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "10,260",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.subtotal": {
+    "value": "85,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.tax": {
+    "value": "18,126",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "113,886",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 6,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-032": {
+  "cells": {
+   "row0.price": {
+    "value": "24.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "26.000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "24.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "24.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-033": {
+  "cells": {
+   "row0.price": {
+    "value": "50,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "67,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "67,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "11,070",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.subtotal": {
+    "value": "117,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.tax": {
+    "value": "19,557",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "148,127",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 7,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-034": {
+  "cells": {
+   "row0.price": {
+    "value": "75.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "5",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "10.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "6.500",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "85.000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "8.500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "93.500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-035": {
+  "cells": {
+   "row0.price": {
+    "value": "18,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "11,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "13,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "104,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "54,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-036": {
+  "cells": {
+   "row0.price": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "60,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-037": {
+  "cells": {
+   "row0.price": {
+    "value": "20.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "30.000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-test-038": {
+  "cells": {
+   "row0.price": {
+    "value": "78,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "65,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "58,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "108,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row4.price": {
+    "value": "88,000",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row5.price": {
+    "value": "38,800",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row6.price": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "row6.qty": {
+    "value": "5",
+    "verdict": "PROVEN"
+   },
+   "row7.price": {
+    "value": "38,000",
+    "verdict": "PROVEN"
+   },
+   "row7.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row8.price": {
+    "value": "38,000",
+    "verdict": "PROVEN"
+   },
+   "row8.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "13",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "42,135",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "561,800",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "60,394",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "664,329",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 23,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-039": {
+  "cells": {
+   "row0.price": {
+    "value": "1,944,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "8",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "243,000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "975,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "5",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "195,000",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "972,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "4",
+    "verdict": "PROVEN"
+   },
+   "row2.unitprice": {
+    "value": "243,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "17",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-040": {
+  "cells": {
+   "row0.price": {
+    "value": "54,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "27,000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "14,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "7,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "32,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "68,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-041": {
+  "cells": {
+   "row0.price": {
+    "value": "47,619",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "30,303",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.price": {
+    "value": "34,632",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.price": {
+    "value": "30,303",
+    "verdict": "UNVERIFIED"
+   },
+   "row4.price": {
+    "value": "30,303",
+    "verdict": "UNVERIFIED"
+   },
+   "row5.price": {
+    "value": "43,290",
+    "verdict": "UNVERIFIED"
+   },
+   "row6.price": {
+    "value": "12,987",
+    "verdict": "UNVERIFIED"
+   },
+   "row7.price": {
+    "value": "12,987",
+    "verdict": "UNVERIFIED"
+   },
+   "row8.price": {
+    "value": "25,974",
+    "verdict": "UNVERIFIED"
+   },
+   "row9.price": {
+    "value": "47,619",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.service": {
+    "value": "48,982.68",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "316,017",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "365,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 13
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-042": {
+  "cells": {
+   "row0.price": {
+    "value": "15,000",
+    "verdict": "REPAIRED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "33,500",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "15,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "16,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-test-043": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "6",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-test-044": {
+  "cells": {
+   "row0.price": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-045": {
+  "cells": {
+   "row0.price": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "28.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "28.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "7.000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "88.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "88.000",
+    "verdict": "REPAIRED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-test-046": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 4
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-047": {
+  "cells": {
+   "row0.price": {
+    "value": "45,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.unitprice": {
+    "value": "45,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.unitprice": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.price": {
+    "value": "18,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.unitprice": {
+    "value": "18,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.discount": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.menuqty": {
+    "value": "3",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "63,000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 12,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-048": {
+  "cells": {
+   "row0.price": {
+    "value": "25,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "75,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "22,728",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "2,272",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "25,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 8
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-049": {
+  "cells": {
+   "row0.price": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "11,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "27,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "23,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "23,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-050": {
+  "cells": {
+   "row0.price": {
+    "value": "17,727",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "80,500",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "17,727",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,773",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "19,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-051": {
+  "cells": {
+   "row0.price": {
+    "value": "165,460",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "4",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "40,456",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "42,274",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "55,456",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "8",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "303,646",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "30,365",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "334,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-052": {
+  "cells": {
+   "row0.price": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "100.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "60.000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "40.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "40.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-053": {
+  "cells": {
+   "row0.price": {
+    "value": "42.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "47.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "18.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "4",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "5.350",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "107.000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "11.235",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "123.585",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 11,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-054": {
+  "cells": {
+   "row0.price": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "10,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "10,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-055": {
+  "cells": {
+   "row0.price": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "32,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "54,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-056": {
+  "cells": {
+   "row0.price": {
+    "value": "8,181",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "1,001",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "8,181",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "818",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "8,999",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-057": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "22,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "42,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-test-058": {
+  "cells": {
+   "row0.price": {
+    "value": "55,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "39,500",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "55,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "5,500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "60,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-059": {
+  "cells": {
+   "row0.price": {
+    "value": "78,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "30,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "5",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "297,490",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "47,500",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row4.price": {
+    "value": "45,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row5.price": {
+    "value": "25,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row6.price": {
+    "value": "16,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row6.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row7.price": {
+    "value": "42,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row7.qty": {
+    "value": "7",
+    "verdict": "PROVEN"
+   },
+   "row8.price": {
+    "value": "37,500",
+    "verdict": "UNVERIFIED"
+   },
+   "row8.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "21",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "618,490",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "61,849",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "680,500",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 12
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-060": {
+  "cells": {
+   "row0.price": {
+    "value": "1.250",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "1.250",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "12.500",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "26.250",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "26.250",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 3
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-061": {
+  "cells": {
+   "row0.price": {
+    "value": "6,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "6,500",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "8,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "8,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "18,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.unitprice": {
+    "value": "9,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row3.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.unitprice": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row4.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row4.unitprice": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "5,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row5.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row5.unitprice": {
+    "value": "5,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "7",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "24,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "24,500",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 7,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 8,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-062": {
+  "cells": {
+   "row0.price": {
+    "value": "18.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "2.000",
+    "verdict": "REPAIRED"
+   },
+   "totals.total": {
+    "value": "48.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-test-063": {
+  "cells": {
+   "row0.price": {
+    "value": "19.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "38.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "60.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "3.000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "57.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "57.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-064": {
+  "cells": {
+   "row0.price": {
+    "value": "16.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "34.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "16.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-065": {
+  "cells": {
+   "row0.price": {
+    "value": "13.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "13.000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "13.000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "13.000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-066": {
+  "cells": {
+   "row0.price": {
+    "value": "36,364",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.change": {
+    "value": "10,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.subtotal": {
+    "value": "36,364",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.tax": {
+    "value": "3,636",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "40,000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 7,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-067": {
+  "cells": {
+   "row0.price": {
+    "value": "9.500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "9.500",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "9.500",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "9.500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-068": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "30,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-069": {
+  "cells": {
+   "row0.price": {
+    "value": "18,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "36,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "4",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "74,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-070": {
+  "cells": {
+   "row0.price": {
+    "value": "432,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "216,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "108,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "172,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "222,000",
+    "verdict": "REPAIRED"
+   },
+   "row4.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row4.unitprice": {
+    "value": "111,000",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row6.price": {
+    "value": "163,000",
+    "verdict": "PROVEN"
+   },
+   "row6.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row7.price": {
+    "value": "116,000",
+    "verdict": "PROVEN"
+   },
+   "row7.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row8.price": {
+    "value": "60,000",
+    "verdict": "PROVEN"
+   },
+   "row8.qty": {
+    "value": "5",
+    "verdict": "PROVEN"
+   },
+   "row8.unitprice": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row9.price": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   },
+   "row9.qty": {
+    "value": "7",
+    "verdict": "PROVEN"
+   },
+   "row9.unitprice": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "80,580",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "1,343,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "142,358",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "1,565,938",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 19,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 6,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-test-071": {
+  "cells": {
+   "row0.price": {
+    "value": "198.000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "198.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "200.200",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "22.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "198.000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-072": {
+  "cells": {
+   "row0.price": {
+    "value": "15,909",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "2,500",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "15,909",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,591",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "17,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-073": {
+  "cells": {
+   "row0.price": {
+    "value": "22.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "22.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "25.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.change": {
+    "value": "3.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "22.000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 5,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-074": {
+  "cells": {
+   "row0.price": {
+    "value": "32,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "32,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "85,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "129,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "22,240",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "278,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "30,024",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "330,264",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-075": {
+  "cells": {
+   "row0.price": {
+    "value": "29,091",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "42,727",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "34,545",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "54,545",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "47,273",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "48,182",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "256,363",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "25,637",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "282,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 6,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-076": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.unitprice": {
+    "value": "6.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-test-077": {
+  "cells": {
+   "row0.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "17,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "5,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-078": {
+  "cells": {
+   "row0.price": {
+    "value": "25.000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "30.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "30.000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 4
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-079": {
+  "cells": {
+   "row0.price": {
+    "value": "22.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "22.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "22.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "22.000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 3,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-080": {
+  "cells": {
+   "row0.price": {
+    "value": "25",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "25.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 2,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-081": {
+  "cells": {
+   "row0.price": {
+    "value": "28.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "14.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "22.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "22.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.unitprice": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "4",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "50.000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 4,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 3
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-test-082": {
+  "cells": {
+   "row0.price": {
+    "value": "115,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "115,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "60,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "60,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "210,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.unitprice": {
+    "value": "105,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "385,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "385,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 5,
+   "UNVERIFIED": 3
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-083": {
+  "cells": {
+   "row0.price": {
+    "value": "20,909",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "25",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "2",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "20,909",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "2,091",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "23,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-084": {
+  "cells": {
+   "row0.price": {
+    "value": "12.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "24.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-test-085": {
+  "cells": {
+   "row0.price": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "3",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "7.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row10.price": {
+    "value": "4.000",
+    "verdict": "PROVEN"
+   },
+   "row10.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "40.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "11.000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row4.price": {
+    "value": "18.000",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row5.price": {
+    "value": "15.000",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row6.price": {
+    "value": "28.500",
+    "verdict": "PROVEN"
+   },
+   "row6.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row7.price": {
+    "value": "10.000",
+    "verdict": "PROVEN"
+   },
+   "row7.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row8.price": {
+    "value": "7.000",
+    "verdict": "PROVEN"
+   },
+   "row8.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row9.price": {
+    "value": "9.000",
+    "verdict": "PROVEN"
+   },
+   "row9.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "197.450",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "14",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "179.500",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "17.950",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "197.450",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 26,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-086": {
+  "cells": {
+   "row0.price": {
+    "value": "9,500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "12,500",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "52,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "30,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-087": {
+  "cells": {
+   "row0.price": {
+    "value": "36,500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "36,500",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "3,650",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "40,150",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-088": {
+  "cells": {
+   "row0.price": {
+    "value": "19,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "19,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "28,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "47,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "47,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-089": {
+  "cells": {
+   "row0.price": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "40,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-090": {
+  "cells": {
+   "row0.price": {
+    "value": "26,818",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "29,500",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "26,818",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "2,681",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "29,500",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 4
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-091": {
+  "cells": {
+   "row0.price": {
+    "value": "15.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "6",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "9.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "21.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-092": {
+  "cells": {
+   "row0.price": {
+    "value": "240",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "4",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "60.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "250.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "10",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "240.000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-test-093": {
+  "cells": {
+   "row0.price": {
+    "value": "16,363",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "16,363",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "16,363",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,636",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "17,999",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-094": {
+  "cells": {
+   "row0.price": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "63,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "11,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "8,330",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "119,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "12,733",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "140,063",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-095": {
+  "cells": {
+   "row0.price": {
+    "value": "43,181",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "43,181",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "13,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "13,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "56,181",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "5,618",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "61,799",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-096": {
+  "cells": {
+   "row0.price": {
+    "value": "41,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "9,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "41,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "41,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-097": {
+  "cells": {
+   "row0.price": {
+    "value": "40.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "9.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "3",
+    "verdict": "PROVEN"
+   },
+   "row2.unitprice": {
+    "value": "3.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "55.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "55.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-098": {
+  "cells": {
+   "row0.price": {
+    "value": "79,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "77,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "59,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "12,900",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "215,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "22,790",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "250,690",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-test-099": {
+  "cells": {
+   "row0.price": {
+    "value": "68,180",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "0",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.discount": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "68,180",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "75,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 4
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-000": {
+  "cells": {
+   "row0.price": {
+    "value": "16,500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "13,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "16,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "4,500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "45,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-001": {
+  "cells": {
+   "row0.price": {
+    "value": "23.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "27.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "23.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-002": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "20,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "80,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "18,181",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "1,818",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 8
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-003": {
+  "cells": {
+   "row0.price": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-004": {
+  "cells": {
+   "row0.price": {
+    "value": "41,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "41,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "41,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-005": {
+  "cells": {
+   "row0.price": {
+    "value": "8,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "8,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "7,273",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "727",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "8,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 4
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-006": {
+  "cells": {
+   "row0.price": {
+    "value": "19,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "52,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "52,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "123,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-007": {
+  "cells": {
+   "row0.price": {
+    "value": "63,636",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "4",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "40,500",
+    "verdict": "PROVEN"
+   },
+   "totals.discount": {
+    "value": "-9,545",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "63,636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "5,409",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "59,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-008": {
+  "cells": {
+   "row0.price": {
+    "value": "19,500",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "0",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "8,300",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "11,700",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "11,700",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 8
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-009": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-010": {
+  "cells": {
+   "row0.price": {
+    "value": "40.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "60.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "60.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-011": {
+  "cells": {
+   "row0.price": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "35.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "10.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "16.000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "81.000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "8.100",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "89.100",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 5,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-012": {
+  "cells": {
+   "row0.price": {
+    "value": "72.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "4",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "72.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-013": {
+  "cells": {
+   "row0.price": {
+    "value": "7,727",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "33,636",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "-4,500",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "41,364",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "4,136",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "45,500",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-014": {
+  "cells": {
+   "row0.price": {
+    "value": "24.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "12.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-validation-015": {
+  "cells": {
+   "row0.price": {
+    "value": "24.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "12.000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "15.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 5
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-016": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "80,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-017": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "80,000",
+    "verdict": "REPAIRED"
+   },
+   "totals.subtotal": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-validation-018": {
+  "cells": {
+   "row0.price": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "15,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "15,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "75,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "25,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-019": {
+  "cells": {
+   "row0.price": {
+    "value": "12,500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "13,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "7,500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "42,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-020": {
+  "cells": {
+   "row0.price": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "5,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "3,500",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "15,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "16,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-021": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 8
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-validation-022": {
+  "cells": {
+   "row0.price": {
+    "value": "280,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "280,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "308,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-023": {
+  "cells": {
+   "row0.price": {
+    "value": "18,182",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "20",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "18,182",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,818",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "REPAIRED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-validation-024": {
+  "cells": {
+   "row0.price": {
+    "value": "11,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "9,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "13,500",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "15,000",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "19,500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "80,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 9,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 6,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-025": {
+  "cells": {
+   "row0.price": {
+    "value": "33,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "28,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.price": {
+    "value": "23,500",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.price": {
+    "value": "23,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row4.price": {
+    "value": "30,000",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row5.price": {
+    "value": "35,500",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row6.price": {
+    "value": "7,000",
+    "verdict": "PROVEN"
+   },
+   "row6.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "7",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "9,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "180,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "18,900",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "207,900",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 11,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-026": {
+  "cells": {
+   "row0.price": {
+    "value": "5.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "5.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "8.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "4.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "2.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row2.unitprice": {
+    "value": "2.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "14.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row3.unitprice": {
+    "value": "14.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "6.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row4.unitprice": {
+    "value": "6.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 10,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-validation-027": {
+  "cells": {
+   "row0.price": {
+    "value": "16,363",
+    "verdict": "REPAIRED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "16,363",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "16,363",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,636",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "17,999",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-validation-028": {
+  "cells": {
+   "row0.price": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "10,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-029": {
+  "cells": {
+   "row0.price": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "20.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-030": {
+  "cells": {
+   "row0.price": {
+    "value": "9,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "29,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "21,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-031": {
+  "cells": {
+   "row0.price": {
+    "value": "24,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "24,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "24,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-032": {
+  "cells": {
+   "row0.price": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "6.000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-033": {
+  "cells": {
+   "row0.price": {
+    "value": "20,500",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "37,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "7,500",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "57,500",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 5
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-034": {
+  "cells": {
+   "row0.price": {
+    "value": "50,500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "76,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "70,500",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "46,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "14,580",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "243,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "25,758",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "283,338",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-035": {
+  "cells": {
+   "row0.price": {
+    "value": "76,500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "82,500",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "56,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "46,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "15,660",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "261,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "27,666",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "304,326",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-036": {
+  "cells": {
+   "row0.price": {
+    "value": "17,272",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "18,999",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "17,272",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,727",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "18,999",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-037": {
+  "cells": {
+   "row0.price": {
+    "value": "13,636",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "70,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "63,636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "6,364",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-038": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "80,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-039": {
+  "cells": {
+   "row0.price": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "12,000",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "23,000",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row4.price": {
+    "value": "8,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "2,100",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "5",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "89,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "8,900",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "97,900",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-040": {
+  "cells": {
+   "row0.price": {
+    "value": "95,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "180,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "345,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "34,500",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "379,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-041": {
+  "cells": {
+   "row0.price": {
+    "value": "150,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "105,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "7",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row10.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row10.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "230,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "95,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "120,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "620,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row5.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row6.price": {
+    "value": "290,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row6.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row7.price": {
+    "value": "390,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row7.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row8.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row8.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row9.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row9.qty": {
+    "value": "3",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.service": {
+    "value": "140,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.subtotal": {
+    "value": "2,000,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.tax": {
+    "value": "212,460",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "2,352,460",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 16,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 12,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-validation-042": {
+  "cells": {
+   "row0.price": {
+    "value": "19,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "19,000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.unitprice": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "53,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "53,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-043": {
+  "cells": {
+   "row0.price": {
+    "value": "272.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "170",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "300.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "22.000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "171",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "278.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-044": {
+  "cells": {
+   "row0.price": {
+    "value": "16.363",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "16,363",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "16.363",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "1,636",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "17,999",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-045": {
+  "cells": {
+   "row0.price": {
+    "value": "85,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "95,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "35,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "25,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "21,600",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "240,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "26,160",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "287,760",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-046": {
+  "cells": {
+   "row0.price": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "22,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-047": {
+  "cells": {
+   "row0.price": {
+    "value": "42,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "8,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "42,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "42,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-048": {
+  "cells": {
+   "row0.price": {
+    "value": "28,636",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "13,636",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "13,636",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "8,500",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "3",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "55,908",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "5,592",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "61,500",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 12,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-049": {
+  "cells": {
+   "row0.price": {
+    "value": "52.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "52.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "22.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "22.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "81.400",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "74.000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "7.400",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-050": {
+  "cells": {
+   "row0.price": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-051": {
+  "cells": {
+   "row0.price": {
+    "value": "47.200",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "118",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "10.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "57.200",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "57.200",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-052": {
+  "cells": {
+   "row0.price": {
+    "value": "42.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "8.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "56.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "56.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "56.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-053": {
+  "cells": {
+   "row0.price": {
+    "value": "11.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "40.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "9.000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "4",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "31.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 3
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-054": {
+  "cells": {
+   "row0.price": {
+    "value": "40.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "40.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.change": {
+    "value": "10.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "40.000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 5,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-validation-055": {
+  "cells": {
+   "row0.price": {
+    "value": "60.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "60.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "60.000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 3,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-validation-056": {
+  "cells": {
+   "row0.price": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-057": {
+  "cells": {
+   "row0.price": {
+    "value": "85,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "85,500",
+    "verdict": "REPAIRED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "77,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "14,850",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "247,500",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "26,235",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "288,585",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-validation-058": {
+  "cells": {
+   "row0.price": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-059": {
+  "cells": {
+   "row0.price": {
+    "value": "78,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "65,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "58,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "108,000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row4.price": {
+    "value": "88,000",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row5.price": {
+    "value": "38,800",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row6.price": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "row6.qty": {
+    "value": "5",
+    "verdict": "PROVEN"
+   },
+   "row7.price": {
+    "value": "38,000",
+    "verdict": "PROVEN"
+   },
+   "row7.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row8.price": {
+    "value": "38,000",
+    "verdict": "PROVEN"
+   },
+   "row8.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "13",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "42,135",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "561,800",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "60,394",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "664,329",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 23,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-060": {
+  "cells": {
+   "row0.price": {
+    "value": "180,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "180,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-061": {
+  "cells": {
+   "row0.price": {
+    "value": "4,500",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "4,500",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "3,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "3,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "10,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "1,800",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "7,500",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "750",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "8,250",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 11
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-062": {
+  "cells": {
+   "row0.price": {
+    "value": "10,909",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "36,364",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "9,091",
+    "verdict": "REPAIRED"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "38,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "56,364",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "5,636",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "62,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 1,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "REPAIRED"
+ },
+ "cord-validation-063": {
+  "cells": {
+   "row0.price": {
+    "value": "43.636",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "43,636",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "8",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "8",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "110,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "53.2",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "51,636",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "5,164",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "56,800",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 11
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-064": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "80,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-065": {
+  "cells": {
+   "row0.price": {
+    "value": "43.636",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "43.636",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "60.100",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "5.500",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "49.636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "4.964",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "54.600",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 11,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-066": {
+  "cells": {
+   "row0.price": {
+    "value": "7,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "7,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "7,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-067": {
+  "cells": {
+   "row0.price": {
+    "value": "69,091",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "69,091",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "6,909",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "76,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-068": {
+  "cells": {
+   "row0.price": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "13,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "30,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "4,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-069": {
+  "cells": {
+   "row0.price": {
+    "value": "59.500",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "34.500",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "57.500",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.service": {
+    "value": "7.575",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "151.500",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "15.908",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "174.983",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 7,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-070": {
+  "cells": {
+   "row0.price": {
+    "value": "69,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "19,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "15,000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "3",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "7,725",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "103,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "11,073",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "121,798",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 11,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-071": {
+  "cells": {
+   "row0.price": {
+    "value": "19.000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "50.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "20.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-072": {
+  "cells": {
+   "row0.price": {
+    "value": "19,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "19,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "17,000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "36,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "36,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-073": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "30,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-074": {
+  "cells": {
+   "row0.price": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "20.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 1
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-075": {
+  "cells": {
+   "row0.price": {
+    "value": "40,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "13,636",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "5,909",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row4.price": {
+    "value": "909",
+    "verdict": "AMBIGUOUS"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100,000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.change": {
+    "value": "33,500",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.menuqty": {
+    "value": "6",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "60,454",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.tax": {
+    "value": "6,046",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "66,500",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 10,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-validation-076": {
+  "cells": {
+   "row0.price": {
+    "value": "31.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "31.000",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "68.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "10",
+    "verdict": "PROVEN"
+   },
+   "row1.unitprice": {
+    "value": "6.800",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "11",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "99.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-077": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ },
+ "cord-validation-078": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "11.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "116.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "9.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "6",
+    "verdict": "PROVEN"
+   },
+   "totals.service": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "177.870",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 4,
+   "UNVERIFIED": 4
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-079": {
+  "cells": {
+   "row0.price": {
+    "value": "9.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "10.000",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "7.000",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "8.000",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "8.000",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row5.price": {
+    "value": "24.000",
+    "verdict": "PROVEN"
+   },
+   "row5.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row5.unitprice": {
+    "value": "12.000",
+    "verdict": "PROVEN"
+   },
+   "row6.price": {
+    "value": "6.000",
+    "verdict": "PROVEN"
+   },
+   "row6.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "72.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "72.000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 7,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-080": {
+  "cells": {
+   "row0.price": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "25.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.menuqty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-081": {
+  "cells": {
+   "row0.price": {
+    "value": "29,091",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "42,727",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row2.price": {
+    "value": "19,091",
+    "verdict": "PROVEN"
+   },
+   "row2.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row3.price": {
+    "value": "60,909",
+    "verdict": "PROVEN"
+   },
+   "row3.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row4.price": {
+    "value": "99,091",
+    "verdict": "PROVEN"
+   },
+   "row4.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "250,909",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "25,091",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "276,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 5,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-082": {
+  "cells": {
+   "row0.price": {
+    "value": "17.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "18.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row2.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row2.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row3.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row3.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "100.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "65.000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "6",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "35.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.total": {
+    "value": "35.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 5,
+   "PROVEN": 8,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-validation-083": {
+  "cells": {
+   "row0.price": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "17,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-084": {
+  "cells": {
+   "row0.price": {
+    "value": "24,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.price": {
+    "value": "24,000",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "52,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "52,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 5
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-085": {
+  "cells": {
+   "row0.price": {
+    "value": "13,636",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "5,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "13,636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,364",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "15,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-086": {
+  "cells": {
+   "row0.price": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "26,000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "26,000",
+    "verdict": "UNCONSTRAINED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 2,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-087": {
+  "cells": {
+   "row0.price": {
+    "value": "29,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "30,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "1,000",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "29,000",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "29,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 6,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-088": {
+  "cells": {
+   "row0.price": {
+    "value": "154,545",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "154,545",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "15,455",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "170,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-089": {
+  "cells": {
+   "row0.price": {
+    "value": "29.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.unitprice": {
+    "value": "29.000",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "0",
+    "verdict": "AMBIGUOUS"
+   },
+   "row1.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.unitprice": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.change": {
+    "value": "71.000",
+    "verdict": "AMBIGUOUS"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "29.000",
+    "verdict": "AMBIGUOUS"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 5,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 2
+  },
+  "doc_verdict": "AMBIGUOUS"
+ },
+ "cord-validation-090": {
+  "cells": {
+   "row0.price": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "row0.unitprice": {
+    "value": "35,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.total": {
+    "value": "70,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-091": {
+  "cells": {
+   "row0.price": {
+    "value": "39,091",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "40,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "4,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "44,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-092": {
+  "cells": {
+   "row0.price": {
+    "value": "20,000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "909",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "25,000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "2,000",
+    "verdict": "PROVEN"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "20,909",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "2,091",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "23,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 10,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-093": {
+  "cells": {
+   "row0.price": {
+    "value": "138,182",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row1.price": {
+    "value": "18,182",
+    "verdict": "PROVEN"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.subtotal": {
+    "value": "156,364",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "15,636",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "172,000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 5,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-094": {
+  "cells": {
+   "row0.price": {
+    "value": "69.000",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "0",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.service": {
+    "value": "3.795",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "69.000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "80.100",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 2,
+   "UNVERIFIED": 5
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-095": {
+  "cells": {
+   "row0.price": {
+    "value": "13,636",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "row1.price": {
+    "value": "13,636",
+    "verdict": "UNVERIFIED"
+   },
+   "row1.qty": {
+    "value": "1",
+    "verdict": "PROVEN"
+   },
+   "totals.cash": {
+    "value": "50,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "20,000",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.menuqty": {
+    "value": "2",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "27,272",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.tax": {
+    "value": "2,700",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "30,000",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 3,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 7
+  },
+  "doc_verdict": "UNEXPLAINED"
+ },
+ "cord-validation-096": {
+  "cells": {
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "row0.unitprice": {
+    "value": "13,636",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "12,750",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.discount": {
+    "value": "-2,045",
+    "verdict": "PROVEN"
+   },
+   "totals.subtotal": {
+    "value": "13,636",
+    "verdict": "PROVEN"
+   },
+   "totals.tax": {
+    "value": "1,159",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "12,750",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 3,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-097": {
+  "cells": {
+   "row0.price": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "30.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "5.000",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "25.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-098": {
+  "cells": {
+   "row0.price": {
+    "value": "100.000",
+    "verdict": "PROVEN"
+   },
+   "row0.qty": {
+    "value": "1",
+    "verdict": "UNCONSTRAINED"
+   },
+   "totals.cash": {
+    "value": "100.000",
+    "verdict": "PROVEN"
+   },
+   "totals.change": {
+    "value": "0",
+    "verdict": "PROVEN"
+   },
+   "totals.total": {
+    "value": "100.000",
+    "verdict": "PROVEN"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 4,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 1,
+   "UNVERIFIED": 0
+  },
+  "doc_verdict": "TIES_OUT"
+ },
+ "cord-validation-099": {
+  "cells": {
+   "row0.price": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "row0.qty": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.cash": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.change": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.subtotal": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   },
+   "totals.total": {
+    "value": "",
+    "verdict": "UNVERIFIED"
+   }
+  },
+  "counts": {
+   "AMBIGUOUS": 0,
+   "PROVEN": 0,
+   "REPAIRED": 0,
+   "UNCONSTRAINED": 0,
+   "UNVERIFIED": 6
+  },
+  "doc_verdict": "NO_STRUCTURE"
+ }
+}

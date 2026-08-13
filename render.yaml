@@ -1,0 +1,16 @@
+# Render blueprint: dashboard -> New -> Blueprint -> select this repo.
+# Free plan: sleeps after ~15 min idle (~50 s cold start on the next visit);
+# in-memory upload sessions are lost on sleep. The sample gallery is baked
+# into the image and unaffected. See DEPLOY.md for the trade-off table.
+services:
+  - type: web
+    name: tallyproof
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false        # Render prompts you for it privately; omit for gallery-only mode
+      - key: TALLYPROOF_DAILY_BUDGET
+        value: "300"

@@ -1,0 +1,1960 @@
+[
+ {
+  "slug": "proven",
+  "title": "26 of 27 cells proven \u2014 and the 27th is honest",
+  "blurb": "Line chain, totals block and item count interlock to pin 26 cells. The cash line has no printed change to check against \u2014 so it is labelled unconstrained, not decorated.",
+  "doc_id": "cord-test-085",
+  "image": "cord-test-085.jpg",
+  "injected": "",
+  "ledger": {
+   "version": 1,
+   "doc_id": "cord-test-085",
+   "merchant": "",
+   "currency_hint": "",
+   "rows": [
+    {
+     "index": 0,
+     "name": "Nasi Putih",
+     "qty": {
+      "cell_id": "row0.qty",
+      "surface": "3"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row0.price",
+      "surface": "30.000"
+     }
+    },
+    {
+     "index": 1,
+     "name": "Nasi Tambah",
+     "qty": {
+      "cell_id": "row1.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row1.price",
+      "surface": "7.000"
+     }
+    },
+    {
+     "index": 2,
+     "name": "Ayam Pop",
+     "qty": {
+      "cell_id": "row2.qty",
+      "surface": "2"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row2.price",
+      "surface": "40.000"
+     }
+    },
+    {
+     "index": 3,
+     "name": "Samabal SP",
+     "qty": {
+      "cell_id": "row3.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row3.price",
+      "surface": "11.000"
+     }
+    },
+    {
+     "index": 4,
+     "name": "Sambal Gabus Asin Cb",
+     "qty": {
+      "cell_id": "row4.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row4.price",
+      "surface": "18.000"
+     }
+    },
+    {
+     "index": 5,
+     "name": "Kerupuk Kuah",
+     "qty": {
+      "cell_id": "row5.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row5.price",
+      "surface": "15.000"
+     }
+    },
+    {
+     "index": 6,
+     "name": "Ikan Bawal Besa",
+     "qty": {
+      "cell_id": "row6.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row6.price",
+      "surface": "28.500"
+     }
+    },
+    {
+     "index": 7,
+     "name": "Telur Dadar",
+     "qty": {
+      "cell_id": "row7.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row7.price",
+      "surface": "10.000"
+     }
+    },
+    {
+     "index": 8,
+     "name": "Teh Es",
+     "qty": {
+      "cell_id": "row8.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row8.price",
+      "surface": "7.000"
+     }
+    },
+    {
+     "index": 9,
+     "name": "Teh Manis",
+     "qty": {
+      "cell_id": "row9.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row9.price",
+      "surface": "9.000"
+     }
+    },
+    {
+     "index": 10,
+     "name": "Es Batu",
+     "qty": {
+      "cell_id": "row10.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row10.price",
+      "surface": "4.000"
+     }
+    }
+   ],
+   "subtotal": {
+    "cell_id": "totals.subtotal",
+    "surface": "179.500"
+   },
+   "tax": {
+    "cell_id": "totals.tax",
+    "surface": "17.950"
+   },
+   "service": null,
+   "discount": null,
+   "total": {
+    "cell_id": "totals.total",
+    "surface": "197.450"
+   },
+   "cash": {
+    "cell_id": "totals.cash",
+    "surface": "197.450"
+   },
+   "change": null,
+   "menuqty": {
+    "cell_id": "totals.menuqty",
+    "surface": "14"
+   }
+  },
+  "certificate": {
+   "doc_id": "cord-test-085",
+   "doc_verdict": "TIES_OUT",
+   "convention": [
+    ",",
+    "."
+   ],
+   "counts": {
+    "PROVEN": 26,
+    "REPAIRED": 0,
+    "AMBIGUOUS": 0,
+    "UNVERIFIED": 0,
+    "UNCONSTRAINED": 1
+   },
+   "review_count": 1,
+   "components": [
+    {
+     "verdict": "TIES_OUT",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "cardinality": 1,
+     "layer": 0,
+     "detail": "observed reading satisfies every identity; membership unique",
+     "exhaustive": true
+    },
+    {
+     "verdict": "TIES_OUT",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "cardinality": 1,
+     "layer": 0,
+     "detail": "observed reading satisfies every identity; membership unique",
+     "exhaustive": true
+    }
+   ],
+   "cells": {
+    "row0.qty": {
+     "cell_id": "row0.qty",
+     "surface": "3",
+     "verdict": "PROVEN",
+     "value": "3",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.price": {
+     "cell_id": "row0.price",
+     "surface": "30.000",
+     "verdict": "PROVEN",
+     "value": "30.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.qty": {
+     "cell_id": "row1.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.price": {
+     "cell_id": "row1.price",
+     "surface": "7.000",
+     "verdict": "PROVEN",
+     "value": "7.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.qty": {
+     "cell_id": "row2.qty",
+     "surface": "2",
+     "verdict": "PROVEN",
+     "value": "2",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.price": {
+     "cell_id": "row2.price",
+     "surface": "40.000",
+     "verdict": "PROVEN",
+     "value": "40.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row3.qty": {
+     "cell_id": "row3.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row3.price": {
+     "cell_id": "row3.price",
+     "surface": "11.000",
+     "verdict": "PROVEN",
+     "value": "11.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row4.qty": {
+     "cell_id": "row4.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row4.price": {
+     "cell_id": "row4.price",
+     "surface": "18.000",
+     "verdict": "PROVEN",
+     "value": "18.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row5.qty": {
+     "cell_id": "row5.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row5.price": {
+     "cell_id": "row5.price",
+     "surface": "15.000",
+     "verdict": "PROVEN",
+     "value": "15.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row6.qty": {
+     "cell_id": "row6.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row6.price": {
+     "cell_id": "row6.price",
+     "surface": "28.500",
+     "verdict": "PROVEN",
+     "value": "28.500",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row7.qty": {
+     "cell_id": "row7.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row7.price": {
+     "cell_id": "row7.price",
+     "surface": "10.000",
+     "verdict": "PROVEN",
+     "value": "10.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row8.qty": {
+     "cell_id": "row8.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row8.price": {
+     "cell_id": "row8.price",
+     "surface": "7.000",
+     "verdict": "PROVEN",
+     "value": "7.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row9.qty": {
+     "cell_id": "row9.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row9.price": {
+     "cell_id": "row9.price",
+     "surface": "9.000",
+     "verdict": "PROVEN",
+     "value": "9.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row10.qty": {
+     "cell_id": "row10.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row10.price": {
+     "cell_id": "row10.price",
+     "surface": "4.000",
+     "verdict": "PROVEN",
+     "value": "4.000",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.subtotal": {
+     "cell_id": "totals.subtotal",
+     "surface": "179.500",
+     "verdict": "PROVEN",
+     "value": "179.500",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.tax": {
+     "cell_id": "totals.tax",
+     "surface": "17.950",
+     "verdict": "PROVEN",
+     "value": "17.950",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.total": {
+     "cell_id": "totals.total",
+     "surface": "197.450",
+     "verdict": "PROVEN",
+     "value": "197.450",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.cash": {
+     "cell_id": "totals.cash",
+     "surface": "197.450",
+     "verdict": "UNCONSTRAINED",
+     "value": "197.450",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.menuqty": {
+     "cell_id": "totals.menuqty",
+     "surface": "14",
+     "verdict": "PROVEN",
+     "value": "14",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    }
+   }
+  }
+ },
+ {
+  "slug": "repaired",
+  "title": "A real annotation error, caught and repaired",
+  "blurb": "The human-written ground truth for this receipt breaks the chain at row 5. Exactly one re-reading closes it \u2014 pinned by four row identities plus the totals block. Nothing was guessed.",
+  "doc_id": "cord-test-070",
+  "image": "cord-test-070.jpg",
+  "injected": "",
+  "ledger": {
+   "version": 1,
+   "doc_id": "cord-test-070",
+   "merchant": "",
+   "currency_hint": "",
+   "rows": [
+    {
+     "index": 0,
+     "name": "UDANG RE",
+     "qty": {
+      "cell_id": "row0.qty",
+      "surface": "2"
+     },
+     "unitprice": {
+      "cell_id": "row0.unitprice",
+      "surface": "216,000"
+     },
+     "price": {
+      "cell_id": "row0.price",
+      "surface": "432,000"
+     }
+    },
+    {
+     "index": 1,
+     "name": "=*LARGE*==",
+     "qty": {
+      "cell_id": "row1.qty",
+      "surface": "2"
+     },
+     "unitprice": null,
+     "price": null
+    },
+    {
+     "index": 2,
+     "name": "AYM GR JUN NJAN",
+     "qty": {
+      "cell_id": "row2.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row2.price",
+      "surface": "108,000"
+     }
+    },
+    {
+     "index": 3,
+     "name": "SAPO TH SEAFOOD",
+     "qty": {
+      "cell_id": "row3.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row3.price",
+      "surface": "172,000"
+     }
+    },
+    {
+     "index": 4,
+     "name": "POCAI 3",
+     "qty": {
+      "cell_id": "row4.qty",
+      "surface": "2"
+     },
+     "unitprice": {
+      "cell_id": "row4.unitprice",
+      "surface": "111,000"
+     },
+     "price": {
+      "cell_id": "row4.price",
+      "surface": "222.000"
+     }
+    },
+    {
+     "index": 5,
+     "name": "=*MEDIUM*=",
+     "qty": {
+      "cell_id": "row5.qty",
+      "surface": "2"
+     },
+     "unitprice": null,
+     "price": null
+    },
+    {
+     "index": 6,
+     "name": "GURAME FILLET M",
+     "qty": {
+      "cell_id": "row6.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row6.price",
+      "surface": "163,000"
+     }
+    },
+    {
+     "index": 7,
+     "name": "BIHUN GORENG JJ",
+     "qty": {
+      "cell_id": "row7.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row7.price",
+      "surface": "116,000"
+     }
+    },
+    {
+     "index": 8,
+     "name": "ICED TEA",
+     "qty": {
+      "cell_id": "row8.qty",
+      "surface": "5"
+     },
+     "unitprice": {
+      "cell_id": "row8.unitprice",
+      "surface": "12,000"
+     },
+     "price": {
+      "cell_id": "row8.price",
+      "surface": "60,000"
+     }
+    },
+    {
+     "index": 9,
+     "name": "NASI PUTIH",
+     "qty": {
+      "cell_id": "row9.qty",
+      "surface": "7"
+     },
+     "unitprice": {
+      "cell_id": "row9.unitprice",
+      "surface": "10,000"
+     },
+     "price": {
+      "cell_id": "row9.price",
+      "surface": "70,000"
+     }
+    }
+   ],
+   "subtotal": {
+    "cell_id": "totals.subtotal",
+    "surface": "1,343,000"
+   },
+   "tax": {
+    "cell_id": "totals.tax",
+    "surface": "142,358"
+   },
+   "service": {
+    "cell_id": "totals.service",
+    "surface": "80,580"
+   },
+   "discount": null,
+   "total": {
+    "cell_id": "totals.total",
+    "surface": "1,565,938"
+   },
+   "cash": null,
+   "change": null,
+   "menuqty": null
+  },
+  "certificate": {
+   "doc_id": "cord-test-070",
+   "doc_verdict": "REPAIRED",
+   "convention": [
+    ".",
+    ","
+   ],
+   "counts": {
+    "PROVEN": 19,
+    "REPAIRED": 1,
+    "AMBIGUOUS": 0,
+    "UNVERIFIED": 0,
+    "UNCONSTRAINED": 6
+   },
+   "review_count": 7,
+   "components": [
+    {
+     "verdict": "REPAIRED",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 1)",
+      "qty \u00d7 unit price = line total  (row 5)",
+      "qty \u00d7 unit price = line total  (row 9)",
+      "qty \u00d7 unit price = line total  (row 10)",
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "cardinality": 1,
+     "layer": 1,
+     "detail": "unique repair: row4.price \u2192 222,000",
+     "exhaustive": true
+    }
+   ],
+   "cells": {
+    "row0.qty": {
+     "cell_id": "row0.qty",
+     "surface": "2",
+     "verdict": "PROVEN",
+     "value": "2",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 1)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.unitprice": {
+     "cell_id": "row0.unitprice",
+     "surface": "216,000",
+     "verdict": "PROVEN",
+     "value": "216,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 1)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.price": {
+     "cell_id": "row0.price",
+     "surface": "432,000",
+     "verdict": "PROVEN",
+     "value": "432,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 1)",
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.qty": {
+     "cell_id": "row1.qty",
+     "surface": "2",
+     "verdict": "UNCONSTRAINED",
+     "value": "2",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.qty": {
+     "cell_id": "row2.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.price": {
+     "cell_id": "row2.price",
+     "surface": "108,000",
+     "verdict": "PROVEN",
+     "value": "108,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row3.qty": {
+     "cell_id": "row3.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row3.price": {
+     "cell_id": "row3.price",
+     "surface": "172,000",
+     "verdict": "PROVEN",
+     "value": "172,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row4.qty": {
+     "cell_id": "row4.qty",
+     "surface": "2",
+     "verdict": "PROVEN",
+     "value": "2",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 5)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row4.unitprice": {
+     "cell_id": "row4.unitprice",
+     "surface": "111,000",
+     "verdict": "PROVEN",
+     "value": "111,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 5)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row4.price": {
+     "cell_id": "row4.price",
+     "surface": "222.000",
+     "verdict": "REPAIRED",
+     "value": "222,000",
+     "note": "exactly one admissible re-reading closes the residual; original shown, nothing silently overwritten",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 5)",
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": "222"
+    },
+    "row5.qty": {
+     "cell_id": "row5.qty",
+     "surface": "2",
+     "verdict": "UNCONSTRAINED",
+     "value": "2",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row6.qty": {
+     "cell_id": "row6.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row6.price": {
+     "cell_id": "row6.price",
+     "surface": "163,000",
+     "verdict": "PROVEN",
+     "value": "163,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row7.qty": {
+     "cell_id": "row7.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row7.price": {
+     "cell_id": "row7.price",
+     "surface": "116,000",
+     "verdict": "PROVEN",
+     "value": "116,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row8.qty": {
+     "cell_id": "row8.qty",
+     "surface": "5",
+     "verdict": "PROVEN",
+     "value": "5",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 9)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row8.unitprice": {
+     "cell_id": "row8.unitprice",
+     "surface": "12,000",
+     "verdict": "PROVEN",
+     "value": "12,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 9)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row8.price": {
+     "cell_id": "row8.price",
+     "surface": "60,000",
+     "verdict": "PROVEN",
+     "value": "60,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 9)",
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row9.qty": {
+     "cell_id": "row9.qty",
+     "surface": "7",
+     "verdict": "PROVEN",
+     "value": "7",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 10)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row9.unitprice": {
+     "cell_id": "row9.unitprice",
+     "surface": "10,000",
+     "verdict": "PROVEN",
+     "value": "10,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 10)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row9.price": {
+     "cell_id": "row9.price",
+     "surface": "70,000",
+     "verdict": "PROVEN",
+     "value": "70,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "qty \u00d7 unit price = line total  (row 10)",
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.subtotal": {
+     "cell_id": "totals.subtotal",
+     "surface": "1,343,000",
+     "verdict": "PROVEN",
+     "value": "1,343,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.tax": {
+     "cell_id": "totals.tax",
+     "surface": "142,358",
+     "verdict": "PROVEN",
+     "value": "142,358",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.service": {
+     "cell_id": "totals.service",
+     "surface": "80,580",
+     "verdict": "PROVEN",
+     "value": "80,580",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.total": {
+     "cell_id": "totals.total",
+     "surface": "1,565,938",
+     "verdict": "PROVEN",
+     "value": "1,565,938",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    }
+   }
+  }
+ },
+ {
+  "slug": "ambiguous",
+  "title": "Two row-groupings balance. It refuses to choose",
+  "blurb": "Two identical-priced rows, a subtotal equal to one of them: arithmetic cannot say which row is the addend, so nothing here is certified. Refusal is the correct answer.",
+  "doc_id": "cord-test-031",
+  "image": "cord-test-031.jpg",
+  "injected": "",
+  "ledger": {
+   "version": 1,
+   "doc_id": "cord-test-031",
+   "merchant": "",
+   "currency_hint": "",
+   "rows": [
+    {
+     "index": 0,
+     "name": "SALMON PESTO",
+     "qty": {
+      "cell_id": "row0.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row0.price",
+      "surface": "85,500"
+     }
+    },
+    {
+     "index": 1,
+     "name": "SALMON PESTO",
+     "qty": {
+      "cell_id": "row1.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row1.price",
+      "surface": "85,500"
+     }
+    }
+   ],
+   "subtotal": {
+    "cell_id": "totals.subtotal",
+    "surface": "85,500"
+   },
+   "tax": {
+    "cell_id": "totals.tax",
+    "surface": "18,126"
+   },
+   "service": {
+    "cell_id": "totals.service",
+    "surface": "10,260"
+   },
+   "discount": null,
+   "total": {
+    "cell_id": "totals.total",
+    "surface": "113,886"
+   },
+   "cash": null,
+   "change": null,
+   "menuqty": null
+  },
+  "certificate": {
+   "doc_id": "cord-test-031",
+   "doc_verdict": "AMBIGUOUS",
+   "convention": [
+    ".",
+    ","
+   ],
+   "counts": {
+    "PROVEN": 0,
+    "REPAIRED": 0,
+    "AMBIGUOUS": 6,
+    "UNVERIFIED": 0,
+    "UNCONSTRAINED": 2
+   },
+   "review_count": 8,
+   "components": [
+    {
+     "verdict": "AMBIGUOUS",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "cardinality": 2,
+     "layer": 0,
+     "detail": "2 row-groupings satisfy the identities; refusing to choose",
+     "exhaustive": true
+    }
+   ],
+   "cells": {
+    "row0.qty": {
+     "cell_id": "row0.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.price": {
+     "cell_id": "row0.price",
+     "surface": "85,500",
+     "verdict": "AMBIGUOUS",
+     "value": "85,500",
+     "note": "more than one grouping of the rows balances; membership unproven",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.qty": {
+     "cell_id": "row1.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.price": {
+     "cell_id": "row1.price",
+     "surface": "85,500",
+     "verdict": "AMBIGUOUS",
+     "value": "85,500",
+     "note": "more than one grouping of the rows balances; membership unproven",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.subtotal": {
+     "cell_id": "totals.subtotal",
+     "surface": "85,500",
+     "verdict": "AMBIGUOUS",
+     "value": "85,500",
+     "note": "value stable, but the balancing row-grouping is not unique",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.tax": {
+     "cell_id": "totals.tax",
+     "surface": "18,126",
+     "verdict": "AMBIGUOUS",
+     "value": "18,126",
+     "note": "value stable, but the balancing row-grouping is not unique",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.service": {
+     "cell_id": "totals.service",
+     "surface": "10,260",
+     "verdict": "AMBIGUOUS",
+     "value": "10,260",
+     "note": "value stable, but the balancing row-grouping is not unique",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.total": {
+     "cell_id": "totals.total",
+     "surface": "113,886",
+     "verdict": "AMBIGUOUS",
+     "value": "113,886",
+     "note": "value stable, but the balancing row-grouping is not unique",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    }
+   }
+  }
+ },
+ {
+  "slug": "unexplained",
+  "title": "This receipt does not add up \u2014 and that's proven",
+  "blurb": "No reading of any single cell closes the residual; the search was exhaustive. The extraction agrees with the pixels. The paper is wrong.",
+  "doc_id": "cord-test-004",
+  "image": "cord-test-004.jpg",
+  "injected": "",
+  "ledger": {
+   "version": 1,
+   "doc_id": "cord-test-004",
+   "merchant": "",
+   "currency_hint": "",
+   "rows": [
+    {
+     "index": 0,
+     "name": "ICE BLACKCOFFE",
+     "qty": {
+      "cell_id": "row0.qty",
+      "surface": "2"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row0.price",
+      "surface": "82,000"
+     }
+    },
+    {
+     "index": 1,
+     "name": "AVOCADO COFFEE",
+     "qty": {
+      "cell_id": "row1.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row1.price",
+      "surface": "61,000"
+     }
+    },
+    {
+     "index": 2,
+     "name": "CHIKEN KATSU FF",
+     "qty": {
+      "cell_id": "row2.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row2.price",
+      "surface": "51,000"
+     }
+    }
+   ],
+   "subtotal": {
+    "cell_id": "totals.subtotal",
+    "surface": "194,000"
+   },
+   "tax": null,
+   "service": null,
+   "discount": {
+    "cell_id": "totals.discount",
+    "surface": "19,400"
+   },
+   "total": {
+    "cell_id": "totals.total",
+    "surface": "174,600"
+   },
+   "cash": {
+    "cell_id": "totals.cash",
+    "surface": "200,000"
+   },
+   "change": {
+    "cell_id": "totals.change",
+    "surface": "25,400"
+   },
+   "menuqty": null
+  },
+  "certificate": {
+   "doc_id": "cord-test-004",
+   "doc_verdict": "UNEXPLAINED",
+   "convention": [
+    ".",
+    ","
+   ],
+   "counts": {
+    "PROVEN": 0,
+    "REPAIRED": 0,
+    "AMBIGUOUS": 0,
+    "UNVERIFIED": 8,
+    "UNCONSTRAINED": 3
+   },
+   "review_count": 11,
+   "components": [
+    {
+     "verdict": "UNEXPLAINED",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total",
+      "cash \u2212 total = change"
+     ],
+     "cardinality": 0,
+     "layer": 1,
+     "detail": "L3: residual 38,800",
+     "exhaustive": true
+    }
+   ],
+   "cells": {
+    "row0.qty": {
+     "cell_id": "row0.qty",
+     "surface": "2",
+     "verdict": "UNCONSTRAINED",
+     "value": "2",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.price": {
+     "cell_id": "row0.price",
+     "surface": "82,000",
+     "verdict": "UNVERIFIED",
+     "value": "82,000",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.qty": {
+     "cell_id": "row1.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.price": {
+     "cell_id": "row1.price",
+     "surface": "61,000",
+     "verdict": "UNVERIFIED",
+     "value": "61,000",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.qty": {
+     "cell_id": "row2.qty",
+     "surface": "1",
+     "verdict": "UNCONSTRAINED",
+     "value": "1",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.price": {
+     "cell_id": "row2.price",
+     "surface": "51,000",
+     "verdict": "UNVERIFIED",
+     "value": "51,000",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.subtotal": {
+     "cell_id": "totals.subtotal",
+     "surface": "194,000",
+     "verdict": "UNVERIFIED",
+     "value": "194,000",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.discount": {
+     "cell_id": "totals.discount",
+     "surface": "19,400",
+     "verdict": "UNVERIFIED",
+     "value": "19,400",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.total": {
+     "cell_id": "totals.total",
+     "surface": "174,600",
+     "verdict": "UNVERIFIED",
+     "value": "174,600",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "subtotal + tax + service + discount = total",
+      "cash \u2212 total = change"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.cash": {
+     "cell_id": "totals.cash",
+     "surface": "200,000",
+     "verdict": "UNVERIFIED",
+     "value": "200,000",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "cash \u2212 total = change"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.change": {
+     "cell_id": "totals.change",
+     "surface": "25,400",
+     "verdict": "UNVERIFIED",
+     "value": "25,400",
+     "note": "the document itself does not add up: no reading of any single cell closes the residual, and that was checked exhaustively",
+     "equations": [
+      "cash \u2212 total = change"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    }
+   }
+  }
+ },
+ {
+  "slug": "no-structure",
+  "title": "Nothing here can be proven, and it says so",
+  "blurb": "No subtotal, no cash line, no item count: this receipt carries no redundancy, so every number is honestly labelled unconstrained instead of decorated with fake confidence.",
+  "doc_id": "cord-test-024",
+  "image": "cord-test-024.jpg",
+  "injected": "",
+  "ledger": {
+   "version": 1,
+   "doc_id": "cord-test-024",
+   "merchant": "",
+   "currency_hint": "",
+   "rows": [
+    {
+     "index": 0,
+     "name": "5001-Corn Flakes Cookies",
+     "qty": {
+      "cell_id": "row0.qty",
+      "surface": "x1"
+     },
+     "unitprice": {
+      "cell_id": "row0.unitprice",
+      "surface": "Rp.56.000"
+     },
+     "price": {
+      "cell_id": "row0.price",
+      "surface": "Rp.56.000"
+     }
+    },
+    {
+     "index": 1,
+     "name": "5003-Chokoreto Cookies",
+     "qty": {
+      "cell_id": "row1.qty",
+      "surface": "x1"
+     },
+     "unitprice": {
+      "cell_id": "row1.unitprice",
+      "surface": "Rp.62.000"
+     },
+     "price": {
+      "cell_id": "row1.price",
+      "surface": "Rp.62.000"
+     }
+    },
+    {
+     "index": 2,
+     "name": "6002-Plastic Bag Medium",
+     "qty": {
+      "cell_id": "row2.qty",
+      "surface": "x1"
+     },
+     "unitprice": {
+      "cell_id": "row2.unitprice",
+      "surface": "Rp.0"
+     },
+     "price": {
+      "cell_id": "row2.price",
+      "surface": "Rp.0"
+     }
+    }
+   ],
+   "subtotal": null,
+   "tax": null,
+   "service": null,
+   "discount": null,
+   "total": {
+    "cell_id": "totals.total",
+    "surface": "Rp.118.000"
+   },
+   "cash": null,
+   "change": null,
+   "menuqty": {
+    "cell_id": "totals.menuqty",
+    "surface": "3"
+   }
+  },
+  "certificate": {
+   "doc_id": "cord-test-024",
+   "doc_verdict": "NO_STRUCTURE",
+   "convention": [
+    ",",
+    "."
+   ],
+   "counts": {
+    "PROVEN": 0,
+    "REPAIRED": 0,
+    "AMBIGUOUS": 0,
+    "UNVERIFIED": 10,
+    "UNCONSTRAINED": 1
+   },
+   "review_count": 11,
+   "components": [],
+   "cells": {
+    "row0.qty": {
+     "cell_id": "row0.qty",
+     "surface": "x1",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.unitprice": {
+     "cell_id": "row0.unitprice",
+     "surface": "Rp.56.000",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.price": {
+     "cell_id": "row0.price",
+     "surface": "Rp.56.000",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.qty": {
+     "cell_id": "row1.qty",
+     "surface": "x1",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.unitprice": {
+     "cell_id": "row1.unitprice",
+     "surface": "Rp.62.000",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.price": {
+     "cell_id": "row1.price",
+     "surface": "Rp.62.000",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.qty": {
+     "cell_id": "row2.qty",
+     "surface": "x1",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.unitprice": {
+     "cell_id": "row2.unitprice",
+     "surface": "Rp.0",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.price": {
+     "cell_id": "row2.price",
+     "surface": "Rp.0",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.total": {
+     "cell_id": "totals.total",
+     "surface": "Rp.118.000",
+     "verdict": "UNVERIFIED",
+     "value": "",
+     "note": "no admissible reading under the document's convention",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.menuqty": {
+     "cell_id": "totals.menuqty",
+     "surface": "3",
+     "verdict": "UNCONSTRAINED",
+     "value": "3",
+     "note": "no identity on this receipt reaches this cell",
+     "equations": [],
+     "alternatives": [],
+     "repaired_from": ""
+    }
+   }
+  }
+ },
+ {
+  "slug": "misread",
+  "title": "Simulated OCR misread: one glyph swapped",
+  "blurb": "Same real receipt, one glyph corrupted the way thermal paper does it (the exact swap is declared on the page). Exactly one re-reading closes the residual, so it is repaired \u2014 original shown.",
+  "doc_id": "cord-validation-048",
+  "image": "cord-validation-048.jpg",
+  "injected": "28,636 \u2192 78,636 (glyph 2\u21927)",
+  "ledger": {
+   "version": 1,
+   "doc_id": "cord-validation-048",
+   "merchant": "",
+   "currency_hint": "",
+   "rows": [
+    {
+     "index": 0,
+     "name": "SB 1 OR",
+     "qty": {
+      "cell_id": "row0.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row0.price",
+      "surface": "78,636"
+     }
+    },
+    {
+     "index": 1,
+     "name": "Chokocha Flt",
+     "qty": {
+      "cell_id": "row1.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row1.price",
+      "surface": "13,636"
+     }
+    },
+    {
+     "index": 2,
+     "name": "Bbq Bento",
+     "qty": {
+      "cell_id": "row2.qty",
+      "surface": "1"
+     },
+     "unitprice": null,
+     "price": {
+      "cell_id": "row2.price",
+      "surface": "13,636"
+     }
+    }
+   ],
+   "subtotal": {
+    "cell_id": "totals.subtotal",
+    "surface": "55,908"
+   },
+   "tax": {
+    "cell_id": "totals.tax",
+    "surface": "5,592"
+   },
+   "service": null,
+   "discount": null,
+   "total": {
+    "cell_id": "totals.total",
+    "surface": "61,500"
+   },
+   "cash": {
+    "cell_id": "totals.cash",
+    "surface": "70,000"
+   },
+   "change": {
+    "cell_id": "totals.change",
+    "surface": "8,500"
+   },
+   "menuqty": {
+    "cell_id": "totals.menuqty",
+    "surface": "3"
+   }
+  },
+  "certificate": {
+   "doc_id": "cord-validation-048",
+   "doc_verdict": "REPAIRED",
+   "convention": [
+    ".",
+    ","
+   ],
+   "counts": {
+    "PROVEN": 11,
+    "REPAIRED": 1,
+    "AMBIGUOUS": 0,
+    "UNVERIFIED": 0,
+    "UNCONSTRAINED": 0
+   },
+   "review_count": 1,
+   "components": [
+    {
+     "verdict": "REPAIRED",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total",
+      "cash \u2212 total = change"
+     ],
+     "cardinality": 1,
+     "layer": 1,
+     "detail": "unique repair: row0.price \u2192 28,636",
+     "exhaustive": true
+    },
+    {
+     "verdict": "TIES_OUT",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "cardinality": 1,
+     "layer": 0,
+     "detail": "observed reading satisfies every identity; membership unique",
+     "exhaustive": true
+    }
+   ],
+   "cells": {
+    "row0.qty": {
+     "cell_id": "row0.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row0.price": {
+     "cell_id": "row0.price",
+     "surface": "78,636",
+     "verdict": "REPAIRED",
+     "value": "28,636",
+     "note": "exactly one admissible re-reading closes the residual; original shown, nothing silently overwritten",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": "78,636"
+    },
+    "row1.qty": {
+     "cell_id": "row1.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row1.price": {
+     "cell_id": "row1.price",
+     "surface": "13,636",
+     "verdict": "PROVEN",
+     "value": "13,636",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.qty": {
+     "cell_id": "row2.qty",
+     "surface": "1",
+     "verdict": "PROVEN",
+     "value": "1",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "row2.price": {
+     "cell_id": "row2.price",
+     "surface": "13,636",
+     "verdict": "PROVEN",
+     "value": "13,636",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.subtotal": {
+     "cell_id": "totals.subtotal",
+     "surface": "55,908",
+     "verdict": "PROVEN",
+     "value": "55,908",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "\u03a3 line totals = subtotal  (over the rows that are addends)",
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.tax": {
+     "cell_id": "totals.tax",
+     "surface": "5,592",
+     "verdict": "PROVEN",
+     "value": "5,592",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "subtotal + tax + service + discount = total"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.total": {
+     "cell_id": "totals.total",
+     "surface": "61,500",
+     "verdict": "PROVEN",
+     "value": "61,500",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "subtotal + tax + service + discount = total",
+      "cash \u2212 total = change"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.cash": {
+     "cell_id": "totals.cash",
+     "surface": "70,000",
+     "verdict": "PROVEN",
+     "value": "70,000",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "cash \u2212 total = change"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.change": {
+     "cell_id": "totals.change",
+     "surface": "8,500",
+     "verdict": "PROVEN",
+     "value": "8,500",
+     "note": "exactly one re-reading in the whole component closes the residual \u2014 every alternative single-cell reading was enumerated and fails",
+     "equations": [
+      "cash \u2212 total = change"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    },
+    "totals.menuqty": {
+     "cell_id": "totals.menuqty",
+     "surface": "3",
+     "verdict": "PROVEN",
+     "value": "3",
+     "note": "the observed reading satisfies every identity with a unique row-membership (all subsets enumerated); zero-fault readings take precedence over re-readings, so none were consulted",
+     "equations": [
+      "\u03a3 qty = item count"
+     ],
+     "alternatives": [],
+     "repaired_from": ""
+    }
+   }
+  }
+ }
+]

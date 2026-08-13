@@ -1,0 +1,69 @@
+{
+  "ambiguity": {
+    "tokens": 1312,
+    "ambiguous_pct": 83.5
+  },
+  "base_rates": {
+    "qty x unitprice = price": "46/51",
+    "sum(lines) = subtotal": "101/120",
+    "sum(lines) = total": "93/177",
+    "cash - total = change": "84/96",
+    "subtotal + charges = total": "66/77",
+    "sum(qty) = item count": "35/36",
+    "subtotal_pct": 84.2
+  },
+  "study": {
+    "n": 118,
+    "unique -> certify": 97,
+    "none -> UNEXPLAINED (paper wrong)": 12,
+    "multiple -> AMBIGUOUS": 9,
+    "certify_pct": 82.2,
+    "ambiguous_pct": 7.6,
+    "unexplained_pct": 10.2
+  },
+  "segmentation": {
+    "multi_pct": 5.1
+  },
+  "soundness": {
+    "n": 97,
+    "alternatives": 0,
+    "bound_pct": 3.1
+  },
+  "product": {
+    "docs": {
+      "UNEXPLAINED": 29,
+      "TIES_OUT": 134,
+      "AMBIGUOUS": 16,
+      "NO_STRUCTURE": 12,
+      "REPAIRED": 9
+    },
+    "cells": {
+      "PROVEN": 957,
+      "REPAIRED": 9,
+      "AMBIGUOUS": 104,
+      "UNVERIFIED": 348,
+      "UNCONSTRAINED": 353
+    },
+    "ship_votes": {
+      ",.": 71,
+      ".,": 129
+    }
+  },
+  "faults": {
+    "in_model": {
+      "injected": 266,
+      "repaired correctly": 105,
+      "flagged unexplained": 17,
+      "abstained (ambiguous)": 80,
+      "flagged unreadable (in review queue)": 64,
+      "bound_pct": 1.2
+    },
+    "out_of_model": {
+      "injected": 232,
+      "flagged unexplained": 224,
+      "FALSE REPAIR": 3,
+      "abstained (ambiguous)": 5,
+      "bound_pct": 3.4
+    }
+  }
+}
