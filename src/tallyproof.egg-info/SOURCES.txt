@@ -1,0 +1,15 @@
+pyproject.toml
+src/tallyproof/__init__.py
+src/tallyproof.egg-info/PKG-INFO
+src/tallyproof.egg-info/SOURCES.txt
+src/tallyproof.egg-info/dependency_links.txt
+src/tallyproof.egg-info/requires.txt
+src/tallyproof.egg-info/top_level.txt
+src/tallyproof/app/__init__.py
+src/tallyproof/core/__init__.py
+src/tallyproof/core/constraints.py
+src/tallyproof/core/ledger.py
+src/tallyproof/core/numerals.py
+src/tallyproof/core/solver.py
+src/tallyproof/extract/__init__.py
+src/tallyproof/extract/cord_gt.py

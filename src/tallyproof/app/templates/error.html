@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ code }} · Tallyproof{% endblock %}
+{% block content %}
+<section class="doc-head">
+  <h1>{{ code }}</h1>
+  <div class="verdict-callout {% if code == 429 %}ambiguous-bg{% elif code >= 500 %}unverified-bg{% else %}unconstrained-bg{% endif %}">
+    {{ message }}
+  </div>
+  <p><a href="/">← back to the receipts</a></p>
+</section>
+{% endblock %}

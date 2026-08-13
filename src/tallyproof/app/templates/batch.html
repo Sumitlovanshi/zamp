@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Batch · Tallyproof{% endblock %}
+{% block content %}
+<section class="doc-head">
+  <p class="crumb"><a href="/">← all receipts</a></p>
+  <h1>Your batch</h1>
+
+  {% if not summary %}
+  <div class="verdict-callout unconstrained-bg">
+    <strong>Nothing here yet.</strong>
+    {% if have_key and budget_remaining > 0 %}Upload receipts from the
+    <a href="/">front page</a> and they accumulate into one queryable batch —
+    per-cell verdicts included — until {{ ttl_minutes }} minutes after your
+    last visit, then everything is deleted.
+    {% else %}Uploads are paused on this deployment (gallery-only mode), so
+    batches can't be built right now — the <a href="/">sample receipts</a>
+    carry the full per-cell experience.{% endif %}
+    The samples don't join the batch; they belong to everyone.
+  </div>
+  {% else %}
+  <h2 class="review-headline">You review <b>{{ summary.review }}</b> of
+      {{ summary.total_cells }} cells across {{ summary.n_docs }} receipt{{ '' if summary.n_docs == 1 else 's' }}.</h2>
+  <p class="counts">
+    {% for v, n in summary.census.items() if n > 0 %}
+      <span class="badge {{ v }}">{{ n }} {{ v.replace('_',' ')|lower }}</span>
+    {% endfor %}
+  </p>
+
+  <div class="spend">
+    <h3>Total spend — census semantics, not one lying number</h3>
+    <p class="spend-line">
+      <b>{{ summary.spend_certified }}</b> certified
+      ({{ summary.n_certified }} of {{ summary.n_docs }} receipt totals proven or repaired)
+      {% if summary.spend_interval %}
+        · with ambiguous cells the truth lies in
+        <b>[{{ summary.spend_interval[0] }} – {{ summary.spend_interval[1] }}]</b>
+      {% endif %}
+    </p>
+    {% if summary.excluded %}
+    <p class="note">Excluded — nothing proves these and the sum won't pretend:
+      {% for t in summary.excluded %}
+        <a href="/d/{{ t.doc_id }}">{{ t.name }}</a> ({{ t.verdict.replace('_',' ')|lower }}){{ "," if not loop.last }}
+      {% endfor %}
+    </p>
+    {% endif %}
+    <p class="note">Currencies are not converted or assumed; if you mix
+    currencies in one batch, the sum is over face values and it is on you.</p>
+  </div>
+
+  <table class="batch-table">
+    <thead><tr><th>receipt</th><th>total</th><th>verdict</th><th>review</th></tr></thead>
+    <tbody>
+    {% for rec in docs %}
+      {% set t = summary.per_doc[loop.index0] %}
+      <tr>
+        <td><a href="/d/{{ rec.doc_id }}">{{ rec.name }}</a></td>
+        <td class="value">{{ t.value if t.value is not none else '—' }}</td>
+        <td><span class="badge {{ t.verdict }}">{{ t.verdict.replace('_',' ') }}</span></td>
+        <td>{{ rec.certificate.review_count }} / {{ rec.certificate.cells|length }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  <p><a class="button" href="/batch.csv">Export every cell as CSV</a>
+     <span class="fine">— verdicts travel with the numbers, so the spreadsheet
+     loses nothing this system knew.</span></p>
+  {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Every number on this receipt is <span class="proven">proven</span>,
+      <span class="repaired">repaired</span>, or honestly
+      <span class="unverified">flagged</span>.</h1>
+  <p class="sub">OCR tools hand you a table that <em>looks</em> right and a confidence
+  score that means nothing. Tallyproof reads the receipt's own arithmetic —
+  the line chain, the totals block, the cash anchor, the item count — and
+  enumerates <strong>every reading the glyphs admit</strong>. One explanation:
+  certified. Several: it shows you all of them. None: <strong>the paper itself
+  doesn't add up, and that's proven, not guessed.</strong> There is no
+  confidence threshold anywhere in the system.</p>
+
+  {% if have_key and budget_remaining > 0 %}
+  <form class="upload" action="/upload" method="post" enctype="multipart/form-data">
+    <label class="dropzone">
+      <input type="file" name="file" accept="image/*"
+             onchange="this.form.submit()">
+      <span class="big">📸 Photograph a receipt</span>
+      <span class="fine">or tap to choose an image · any common image format, ≤ 8 MB ·
+      gone within {{ ttl_minutes }} min of your last visit · single-page receipts only</span>
+    </label>
+  </form>
+  {% else %}
+  <div class="dropzone" style="cursor: default">
+    <span class="big">Uploads are paused (gallery-only mode)</span>
+    <span class="fine">{% if not have_key %}no model key is configured on this deployment{% else %}today's model budget is spent{% endif %}
+    — the six samples below carry the full experience and never touch a model</span>
+  </div>
+  {% endif %}
+</section>
+
+<section class="tiles">
+  <h2>Or start with a real one — each tile is a different honest answer</h2>
+  <div class="grid">
+    {% for t in tiles %}
+    <a class="tile v-{{ t.verdict }}" href="/s/{{ t.slug }}">
+      <img src="/samples/{{ t.image }}" alt="" loading="lazy">
+      <div class="tile-body">
+        <span class="badge {{ t.verdict }}">{{ t.verdict.replace('_',' ') }}</span>
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.blurb }}</p>
+        <p class="review-line">review {{ t.review }} of {{ t.cells }} cells</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% if evidence %}
+<section class="evidence">
+  <h2>The claim is measured, not asserted</h2>
+  <p>On 200 real photographed receipts with third-party human annotations
+  (CORD-v2 — no model, no image, and none of our own data in the loop):</p>
+  <div class="stats">
+    <div class="stat"><b>{{ evidence.ambiguity.ambiguous_pct }}%</b>
+      of money tokens admit ≥2 readings — the number doesn't know its own value</div>
+    <div class="stat"><b>{{ evidence.base_rates.subtotal_pct }}%</b>
+      of receipts' own annotations satisfy Σ&nbsp;lines&nbsp;=&nbsp;subtotal —
+      a naive checker is wrong 1 time in 6</div>
+    <div class="stat"><b>{{ evidence.study.certify_pct }}%</b> get a unique explanation ·
+      <b>{{ evidence.study.ambiguous_pct }}%</b> ambiguous, refused ·
+      <b>{{ evidence.study.unexplained_pct }}%</b> provably don't add up
+      <span class="fine">(of the {{ evidence.study.n }} receipts with a testable line chain)</span></div>
+    <div class="stat"><b>{{ evidence.faults.in_model['FALSE REPAIR']|default(0) }} / {{ evidence.faults.in_model.injected }}</b>
+      false repairs under seeded in-model corruption</div>
+  </div>
+  <p class="fine">Every figure regenerates from <code>make eval</code>;
+  CI fails if this page and the code disagree. Full tables in
+  <a href="https://github.com/Sumitlovanshi/zamp/blob/main/eval/report.md">eval/report.md</a>.</p>
+</section>
+{% endif %}
+
+<section class="scope">
+  <h2>What it refuses to do</h2>
+  <ul>
+    <li><strong>No confidence scores.</strong> A verdict is a cardinality —
+        how many readings survive — never a 0.94 that means nothing.</li>
+    <li><strong>No repair is ever silent.</strong> The original stays on
+        screen next to what arithmetic says it must have been.</li>
+    <li><strong>What arithmetic can't reach, it won't decorate.</strong> On the
+        evaluation corpus ~40% of cells end up outside PROVEN — merchant names,
+        dates, unanchored numbers — each labelled as exactly what it is.</li>
+    <li><strong>Bank statements, invoices, handwriting: out of scope.</strong>
+        Deliberately — the <a href="https://github.com/Sumitlovanshi/zamp/blob/main/decisions.md">decisions log</a> says why.</li>
+  </ul>
+</section>
+{% endblock %}

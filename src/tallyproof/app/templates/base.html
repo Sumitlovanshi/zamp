@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Tallyproof{% endblock %}</title>
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>✓</text></svg>">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="/">tally<strong>proof</strong></a>
+  <nav>
+    <a href="/batch">batch{% if n_batch %} ({{ n_batch }}){% endif %}</a>
+    <a href="/status">status</a>
+    <a href="https://github.com/Sumitlovanshi/zamp">source</a>
+  </nav>
+</header>
+{% if not have_key or budget_remaining <= 0 %}
+<div class="banner degraded">
+  {% if not have_key %}No model key configured — running in gallery-only mode.
+  {% else %}Today's model budget is spent — gallery-only until midnight UTC.{% endif %}
+  The six samples carry the full experience; they never needed a model.
+</div>
+{% endif %}
+<main>{% block content %}{% endblock %}</main>
+<footer class="site">
+  <p>Uploads are processed in memory and deleted {{ ttl_minutes }} minutes after your last
+  visit (or sooner, on any restart) — the app itself never writes them to disk; request
+  bodies over 1&nbsp;MB may transit the OS temp spool during upload, nothing is retained.
+  EXIF (including GPS) is stripped before anything else touches the bytes. Please don't
+  upload receipts containing other people's personal data.</p>
+  <p>Sample receipts: <a href="https://huggingface.co/datasets/naver-clova-ix/cord-v2">CORD-v2</a>
+  (Park&nbsp;et&nbsp;al.&nbsp;2019, CC&nbsp;BY&nbsp;4.0). Every published number regenerates from
+  <code>make eval</code>.</p>
+</footer>
+</body>
+</html>

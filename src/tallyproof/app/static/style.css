@@ -1,0 +1,161 @@
+/* Tallyproof — one stylesheet, no build step.
+   Verdicts are the design system: proven=green, repaired=blue,
+   ambiguous=amber, unverified=red, unconstrained=gray. Numerals are
+   always monospace — this is a tool about digits. */
+
+:root {
+  --bg: #faf9f6;
+  --ink: #1a1c1e;
+  --muted: #6a6f75;
+  --line: #e3e0d8;
+  --card: #ffffff;
+  --proven: #106b3c;    --proven-bg: #e4f3ea;
+  --repaired: #0b5cad;  --repaired-bg: #e3eefc;
+  --ambiguous: #935e0a; --ambiguous-bg: #fcf0d7;
+  --unverified: #a5231f;--unverified-bg: #fbe5e4;
+  --unconstrained: #5b6167; --unconstrained-bg: #eceef0;
+  --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 1100px; margin: 0 auto; padding: 0 20px 80px; }
+a { color: var(--repaired); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font-family: var(--mono); font-size: 0.9em; background: var(--unconstrained-bg);
+       padding: 1px 5px; border-radius: 4px; }
+
+/* header / footer */
+header.site {
+  display: flex; justify-content: space-between; align-items: baseline;
+  max-width: 1100px; margin: 0 auto; padding: 18px 20px;
+}
+.brand { font-size: 20px; color: var(--ink); letter-spacing: -0.02em; }
+.brand strong { color: var(--proven); }
+header.site nav a { margin-left: 18px; color: var(--muted); }
+footer.site {
+  max-width: 1100px; margin: 40px auto 0; padding: 20px;
+  border-top: 1px solid var(--line); color: var(--muted); font-size: 13px;
+}
+.banner.degraded {
+  background: var(--ambiguous-bg); color: var(--ambiguous);
+  padding: 10px 20px; text-align: center; font-size: 14px;
+}
+
+/* hero */
+.hero h1 { font-size: clamp(26px, 4.5vw, 40px); line-height: 1.15;
+           letter-spacing: -0.02em; margin: 30px 0 14px; max-width: 21ch; }
+.hero .proven { color: var(--proven); }
+.hero .repaired { color: var(--repaired); }
+.hero .unverified { color: var(--unverified); }
+.hero .sub { max-width: 68ch; color: var(--muted); }
+
+.upload { margin: 26px 0 8px; }
+.dropzone {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  border: 2px dashed var(--line); border-radius: 14px; background: var(--card);
+  padding: 30px 20px; cursor: pointer; transition: border-color .15s;
+}
+.dropzone:hover { border-color: var(--proven); }
+.dropzone input { display: none; }
+.dropzone .big { font-size: 20px; font-weight: 600; }
+.dropzone .fine, .fine { color: var(--muted); font-size: 13px; }
+
+/* tiles */
+.tiles h2, .evidence h2, .scope h2 { font-size: 20px; margin: 44px 0 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.tile {
+  display: flex; gap: 12px; background: var(--card); border: 1px solid var(--line);
+  border-radius: 12px; padding: 12px; color: var(--ink); align-items: flex-start;
+}
+.tile:hover { text-decoration: none; border-color: var(--muted); }
+.tile img { width: 84px; height: 120px; object-fit: cover; object-position: top;
+            border-radius: 6px; border: 1px solid var(--line); background: #fff; }
+.tile h3 { margin: 6px 0 4px; font-size: 15px; line-height: 1.3; }
+.tile p { margin: 0; font-size: 13px; color: var(--muted); }
+.tile .review-line { margin-top: 6px; font-family: var(--mono); font-size: 12px; }
+
+/* badges */
+.badge {
+  display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; padding: 2px 8px; border-radius: 20px; white-space: nowrap;
+}
+.badge.PROVEN, .badge.TIES_OUT { color: var(--proven); background: var(--proven-bg); }
+.badge.REPAIRED { color: var(--repaired); background: var(--repaired-bg); }
+.badge.AMBIGUOUS { color: var(--ambiguous); background: var(--ambiguous-bg); }
+.badge.UNVERIFIED, .badge.UNEXPLAINED { color: var(--unverified); background: var(--unverified-bg); }
+.badge.UNCONSTRAINED, .badge.NO_STRUCTURE, .badge.ABSENT { color: var(--unconstrained); background: var(--unconstrained-bg); }
+
+/* evidence */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+        padding: 14px; font-size: 14px; color: var(--muted); }
+.stat b { display: block; font-size: 26px; color: var(--ink); font-family: var(--mono); }
+
+.scope ul { max-width: 75ch; color: var(--muted); }
+.scope li { margin: 8px 0; }
+.scope strong { color: var(--ink); }
+
+/* document view */
+.crumb { margin-top: 18px; }
+.review-headline { font-size: clamp(22px, 3.5vw, 32px); margin: 8px 0 10px; letter-spacing: -0.02em; }
+.review-headline b { font-family: var(--mono); }
+.counts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--muted); }
+.injected-note { color: var(--muted); font-size: 14px; }
+
+.verdict-callout { border-radius: 10px; padding: 14px 16px; margin: 14px 0; max-width: 75ch; }
+.unverified-bg { background: var(--unverified-bg); }
+.ambiguous-bg { background: var(--ambiguous-bg); }
+.unconstrained-bg { background: var(--unconstrained-bg); }
+
+.doc-body { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+            gap: 24px; margin-top: 18px; }
+@media (max-width: 860px) { .doc-body { grid-template-columns: 1fr; } }
+.page img { width: 100%; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+
+/* ledger table */
+.ledger table { width: 100%; border-collapse: collapse; background: var(--card);
+                border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.ledger thead tr { display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; gap: 10px;
+                   padding: 0 12px; border-bottom: 1px solid var(--line); }
+.ledger thead th { text-align: left; font-size: 11px; text-transform: uppercase;
+                   letter-spacing: .05em; color: var(--muted); padding: 8px 0; }
+.ledger thead th:last-child { min-width: 96px; }
+.cell-wrap { padding: 0; border-bottom: 1px solid var(--line); }
+.ledger details summary {
+  display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; gap: 10px;
+  align-items: center; padding: 9px 12px; cursor: pointer; list-style: none;
+}
+.ledger details summary::-webkit-details-marker { display: none; }
+.ledger details summary:hover { background: var(--bg); }
+.ledger details[open] summary { background: var(--bg); }
+.cid { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.surface, .value { font-family: var(--mono); font-size: 14px; }
+.row-REPAIRED .value { color: var(--repaired); font-weight: 700; }
+.row-REPAIRED .surface { text-decoration: line-through; text-decoration-color: var(--unverified); }
+.proof { padding: 6px 14px 14px; font-size: 14px; border-top: 1px dashed var(--line); }
+.proof ul { margin: 6px 0; }
+.proof .alt { margin-right: 6px; background: var(--ambiguous-bg); }
+.note { color: var(--muted); font-size: 13px; }
+
+/* components + batch */
+.components { margin-top: 18px; }
+.components h3, .spend h3 { font-size: 15px; margin: 18px 0 8px; }
+.component { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+             padding: 10px 14px; margin-bottom: 10px; font-size: 14px; }
+.component .card { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-left: 8px; }
+.component ul { margin: 8px 0 4px; }
+
+.spend { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+         padding: 6px 16px 12px; margin: 14px 0; }
+.spend-line b { font-family: var(--mono); }
+.batch-table { width: 100%; border-collapse: collapse; background: var(--card);
+               border: 1px solid var(--line); border-radius: 10px; margin: 14px 0; }
+.batch-table td, .batch-table th { padding: 9px 12px; border-bottom: 1px solid var(--line);
+                                   text-align: left; font-size: 14px; }
+.batch-table .value { font-family: var(--mono); }
+.button { display: inline-block; background: var(--ink); color: #fff; border-radius: 8px;
+          padding: 9px 16px; font-size: 14px; }
+.button:hover { text-decoration: none; opacity: .88; }

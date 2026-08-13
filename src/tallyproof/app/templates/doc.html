@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} · Tallyproof{% endblock %}
+{% block content %}
+<section class="doc-head">
+  <p class="crumb"><a href="/">← all receipts</a></p>
+  <h1 class="review-headline">
+    {% if cert.review_count == 0 %}
+      Review <b>0</b> of {{ cert.cells|length }} cells — every number is proven.
+    {% else %}
+      You review <b>{{ cert.review_count }}</b> of {{ cert.cells|length }} cells.
+    {% endif %}
+  </h1>
+  <p class="counts">
+    {% for v, n in cert.counts.items() if n > 0 %}
+      <span class="badge {{ v }}">{{ n }} {{ v.replace('_',' ')|lower }}</span>
+    {% endfor %}
+    · document: <span class="badge {{ cert.doc_verdict }}">{{ cert.doc_verdict.replace('_',' ') }}</span>
+  </p>
+  {% if is_sample and sample.injected %}
+  <p class="injected-note">⚗ Simulated misread, declared: <code>{{ sample.injected }}</code>
+     — one glyph of the real annotation swapped within the OCR confusion set.</p>
+  {% endif %}
+
+  {% if cert.doc_verdict == 'UNEXPLAINED' %}
+  <div class="verdict-callout unverified-bg">
+    {% set broken = cert.components|selectattr('verdict','equalto','UNEXPLAINED')|list|length %}
+    <strong>This receipt does not add up — and that is proven.</strong>
+    Every reading of every single cell was tried ({{ broken }} identity
+    group{{ '' if broken == 1 else 's' }} checked exhaustively);
+    none closes the residual. The extraction agrees with the pixels. The paper is wrong.
+  </div>
+  {% elif cert.doc_verdict == 'AMBIGUOUS' %}
+  <div class="verdict-callout ambiguous-bg">
+    <strong>More than one explanation fits, so nothing gets certified.</strong>
+    The competing explanations — different readings, or different row-groupings
+    that all balance — are described on each cell below. Refusing to choose is
+    the correct answer; a tool that picked one silently would just be
+    confidently wrong.
+  </div>
+  {% elif cert.doc_verdict == 'NO_STRUCTURE' %}
+  <div class="verdict-callout unconstrained-bg">
+    <strong>This receipt carries no redundancy.</strong> No usable subtotal,
+    cash line or item count — there is nothing to check the numbers against,
+    so nothing here can be proven and the cells say so honestly instead of
+    being decorated with confidence.
+  </div>
+  {% endif %}
+</section>
+
+<section class="doc-body">
+  <div class="ledger">
+    <table>
+      <thead><tr><th>cell</th><th>as printed</th><th>value</th><th>verdict</th></tr></thead>
+      <tbody>
+      {% for cell in cells %}
+        <tr class="row-{{ cell.verdict }}">
+          <td colspan="4" class="cell-wrap">
+            <details {% if cell.cell_id == open_cell %}open{% endif %}>
+              <summary>
+                <span class="cid">{{ cell.cell_id|pretty_cell }}</span>
+                <span class="surface">{{ cell.surface }}</span>
+                <span class="value">{% if cell.verdict == 'REPAIRED' %}→ {{ cell.value }}{% else %}{{ cell.value }}{% endif %}</span>
+                <span class="badge {{ cell.verdict }}">{{ cell.verdict.replace('_',' ') }}</span>
+              </summary>
+              <div class="proof">
+                {% if cell.verdict == 'REPAIRED' %}
+                  <p><strong>Printed <code>{{ cell.surface }}</code>{% if cell.repaired_from != cell.surface %} (read as {{ cell.repaired_from }}){% endif %};
+                  arithmetic requires <code>{{ cell.value }}</code>.</strong></p>
+                {% endif %}
+                {% if cell.equations %}
+                  <p>Identities citing this cell:</p>
+                  <ul>{% for eq in cell.equations %}<li><code>{{ eq }}</code></li>{% endfor %}</ul>
+                {% endif %}
+                {% if cell.alternatives %}
+                  <p>Competing values, all satisfying the identities:
+                  {% for alt in cell.alternatives %}<code class="alt">{{ alt }}</code> {% endfor %}</p>
+                {% endif %}
+                <p class="note">{{ cell.note }}</p>
+              </div>
+            </details>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="components">
+      <h3>Identity groups on this receipt</h3>
+      {% for comp in cert.components %}
+      <div class="component">
+        <span class="badge {{ comp.verdict }}">{{ comp.verdict.replace('_',' ') }}</span>
+        <span class="card">{{ comp.cardinality }} explanation{{ '' if comp.cardinality == 1 else 's' }}
+          {% if not comp.exhaustive %}· <em>membership sweep truncated (>13 rows)</em>{% endif %}</span>
+        <ul>{% for eq in comp.equations %}<li><code>{{ eq }}</code></li>{% endfor %}</ul>
+        <p class="note">{{ comp.detail|pretty_ids }}</p>
+      </div>
+      {% else %}
+      <p class="note">No identities were applicable — nothing on this receipt
+      can be checked against anything else on it.</p>
+      {% endfor %}
+      <p class="note">Convention voted for this document:
+        decimal&nbsp;<code>{{ cert.convention[0] }}</code>,
+        grouping&nbsp;<code>{{ cert.convention[1] }}</code>.</p>
+    </div>
+  </div>
+
+  <div class="page">
+    <img src="{{ image_url }}" alt="receipt image">
+  </div>
+</section>
+{% endblock %}

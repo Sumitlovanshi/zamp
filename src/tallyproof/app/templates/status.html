@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Status · Tallyproof{% endblock %}
+{% block content %}
+<section class="doc-head">
+  <h1>Status</h1>
+  <table class="batch-table">
+    <tbody>
+      <tr><td>mode</td><td><b>{{ mode }}</b></td></tr>
+      <tr><td>model budget remaining today</td><td>{% if have_key %}{{ budget_remaining }} calls{% else %}n/a — no model key configured{% endif %}</td></tr>
+      <tr><td>live sessions</td><td>{{ store.sessions }}</td></tr>
+      <tr><td>documents in memory</td><td>{{ store.documents }}</td></tr>
+      <tr><td>retention</td><td>{{ store.ttl_seconds // 60 }} minutes after last visit, memory only</td></tr>
+      <tr><td>upload rate limit</td><td>12/hour per address (burst 5)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">The sample gallery is precomputed and immune to all of the
+  above — it works with no key, no budget and no network.</p>
+</section>
+{% endblock %}
