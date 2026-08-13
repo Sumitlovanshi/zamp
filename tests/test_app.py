@@ -40,6 +40,7 @@ def fixture_ledger(doc_id: str) -> Ledger:
 # ---------------------------------------------------------------- gallery
 def test_index_renders_tiles_and_evidence(client, monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     r = client.get("/")
     assert r.status_code == 200
     # no key -> the upload affordance is honestly paused, not a dead end
@@ -79,6 +80,7 @@ def test_sample_image_traversal_guarded(client):
 # ---------------------------------------------------------------- upload path
 def test_upload_without_key_is_honest_503(client, monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     r = client.post("/upload", files={"file": ("r.jpg", tiny_jpeg(), "image/jpeg")})
     assert r.status_code == 503
     assert "gallery" in r.text.lower() or "sample" in r.text.lower()

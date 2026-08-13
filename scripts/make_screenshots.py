@@ -15,7 +15,6 @@ from __future__ import annotations
 
 import os
 import subprocess
-import sys
 import time
 import urllib.request
 from pathlib import Path
@@ -27,43 +26,43 @@ PORT = 8912
 # (path, filename, caption) — the order tells the product's story
 PAGES = [
     ("/", "01-landing",
-     "The landing page: the claim, the camera, six sample tiles (one per honest "
-     "verdict), and the measured evidence — every number regenerates from `make eval`."),
+     ("The landing page: the claim, the camera, six sample tiles (one per honest "
+     "verdict), and the measured evidence — every number regenerates from `make eval`.")),
     ("/s/proven", "02-proven",
-     "TIES_OUT: 26 of 27 cells proven by interlocking identities. The 27th — a cash "
-     "line with no printed change to check against — is honestly UNCONSTRAINED."),
+     ("TIES_OUT: 26 of 27 cells proven by interlocking identities. The 27th — a cash "
+     "line with no printed change to check against — is honestly UNCONSTRAINED.")),
     ("/s/repaired", "03-repaired",
-     "The aha: a real annotation error in CORD's published ground truth. `222.000` "
+     ("The aha: a real annotation error in CORD's published ground truth. `222.000` "
      "is struck through, repaired to `222,000`, and the proof panel is open — the "
      "identities that pinned it, and the statement that exactly one re-reading closes "
-     "the residual."),
+     "the residual.")),
     ("/s/ambiguous", "04-ambiguous",
-     "AMBIGUOUS: two row-groupings balance, so nothing is certified. Refusing to "
-     "choose is the correct answer — the callout says why."),
+     ("AMBIGUOUS: two row-groupings balance, so nothing is certified. Refusing to "
+     "choose is the correct answer — the callout says why.")),
     ("/s/unexplained", "05-unexplained",
-     "UNEXPLAINED: every reading of every cell was tried; none closes the residual. "
+     ("UNEXPLAINED: every reading of every cell was tried; none closes the residual. "
      "The extraction agrees with the pixels. The paper itself is wrong — proven, "
-     "not guessed."),
+     "not guessed.")),
     ("/s/no-structure", "06-no-structure",
-     "NO_STRUCTURE: a receipt with no redundancy. Nothing can be proven, and every "
-     "cell says so instead of wearing a fake confidence score."),
+     ("NO_STRUCTURE: a receipt with no redundancy. Nothing can be proven, and every "
+     "cell says so instead of wearing a fake confidence score.")),
     ("/s/misread", "07-misread",
-     "Simulated OCR misread, declared on the page (one glyph swapped within the "
+     ("Simulated OCR misread, declared on the page (one glyph swapped within the "
      "confusion set). Exactly one re-reading closes the residual, so it is repaired — "
-     "original shown, never silently overwritten."),
+     "original shown, never silently overwritten.")),
     ("/status", "08-status",
-     "The status page: mode, budget, sessions, retention — the operational truth a "
-     "visitor can check."),
+     ("The status page: mode, budget, sessions, retention — the operational truth a "
+     "visitor can check.")),
     ("/d/expired-doc", "09-retention-404",
-     "The 404 for an expired document owns the retention policy: sessions live for "
-     "an hour, then everything is deleted. That is the design working, not a bug."),
+     ("The 404 for an expired document owns the retention policy: sessions live for "
+     "an hour, then everything is deleted. That is the design working, not a bug.")),
 ]
 
 DEGRADED_PAGES = [
     ("/", "10-gallery-only-mode",
-     "The same landing page with no model key: uploads are honestly paused, the "
+     ("The same landing page with no model key: uploads are honestly paused, the "
      "banner says why, and the six samples still carry the full experience — "
-     "designed degradation, not a dead end."),
+     "designed degradation, not a dead end.")),
 ]
 
 
@@ -81,7 +80,7 @@ def start_server(with_key: bool) -> subprocess.Popen:
         try:
             urllib.request.urlopen(f"http://127.0.0.1:{PORT}/healthz", timeout=1)
             return proc
-        except Exception:
+        except Exception:  # noqa: BLE001 — not up yet; keep polling
             time.sleep(0.25)
     proc.terminate()
     raise SystemExit("server did not become healthy")

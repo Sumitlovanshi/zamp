@@ -129,12 +129,42 @@ def ledger_from_payload(payload: dict, doc_id: str) -> Ledger:
     )
 
 
+def configured_provider() -> str | None:
+    """Which extraction provider this deployment can use, or None.
+
+    `TALLYPROOF_PROVIDER` (anthropic|gemini) forces one; otherwise the first
+    configured key wins, Anthropic before Gemini.  Read per call so tests and
+    dashboard env changes take effect without a restart of anything but the
+    process env."""
+    forced = os.environ.get("TALLYPROOF_PROVIDER")
+    if forced in ("anthropic", "gemini"):
+        key = "ANTHROPIC_API_KEY" if forced == "anthropic" else "GEMINI_API_KEY"
+        return forced if os.environ.get(key) else None
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        return "anthropic"
+    if os.environ.get("GEMINI_API_KEY"):
+        return "gemini"
+    return None
+
+
 def extract(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
-    """One receipt photo → Ledger, with retries and a hard deadline."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise ExtractionError("no_key", "no model key configured")
-    client = anthropic.Anthropic(api_key=api_key, timeout=CALL_TIMEOUT_S, max_retries=0)
+    """One receipt photo → Ledger, with retries and a hard deadline.
+
+    Provider-pluggable by design: the model's only job is transcription, and
+    verdicts are produced exclusively by the network-free solver — so which
+    vision model reads the pixels can never change what gets PROVEN."""
+    provider = configured_provider()
+    if provider == "gemini":
+        return _extract_gemini(image_bytes, media_type, doc_id)
+    if provider == "anthropic":
+        return _extract_anthropic(image_bytes, media_type, doc_id)
+    raise ExtractionError("no_key", "no model key configured")
+
+
+def _extract_anthropic(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
+    client = anthropic.Anthropic(
+        api_key=os.environ["ANTHROPIC_API_KEY"], timeout=CALL_TIMEOUT_S, max_retries=0
+    )
 
     import base64
 
@@ -182,3 +212,102 @@ def extract(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
             time.sleep(1)
     kind = "rate_limited" if isinstance(last, anthropic.RateLimitError) else "timeout"
     raise ExtractionError(kind, str(last)) from last
+
+
+# --- Gemini (free-tier friendly) -------------------------------------------
+# Same PROMPT, same contract, same retry discipline; JSON mode instead of a
+# forced tool call.  Plain REST via httpx (already a dependency of the
+# anthropic SDK) — no second vendor SDK for one endpoint.
+
+GEMINI_MODEL = os.environ.get("TALLYPROOF_GEMINI_MODEL", "gemini-2.5-flash")
+
+_GEMINI_ROW = {
+    "type": "OBJECT",
+    "properties": {
+        "name": {"type": "STRING", "nullable": True},
+        "qty": {"type": "STRING", "nullable": True},
+        "unitprice": {"type": "STRING", "nullable": True},
+        "price": {"type": "STRING", "nullable": True},
+    },
+}
+GEMINI_SCHEMA = {
+    "type": "OBJECT",
+    "properties": {
+        "merchant": {"type": "STRING", "nullable": True},
+        "currency_hint": {"type": "STRING", "nullable": True},
+        "rows": {"type": "ARRAY", "items": _GEMINI_ROW},
+        **{
+            f: {"type": "STRING", "nullable": True}
+            for f in (
+                "subtotal", "tax", "service", "discount",
+                "total", "cash", "change", "menuqty",
+            )
+        },
+    },
+    "required": ["rows"],
+}
+
+
+def _extract_gemini(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
+    import base64
+    import json as _json
+
+    import httpx
+
+    url = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        f"{GEMINI_MODEL}:generateContent"
+    )
+    body = {
+        "contents": [{
+            "parts": [
+                {"inline_data": {
+                    "mime_type": media_type,
+                    "data": base64.b64encode(image_bytes).decode(),
+                }},
+                {"text": PROMPT},
+            ],
+        }],
+        "generationConfig": {
+            "temperature": 0,
+            "responseMimeType": "application/json",
+            "responseSchema": GEMINI_SCHEMA,
+        },
+    }
+    # key travels in a header, never in the URL (query strings end up in logs)
+    headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"]}
+
+    last: Exception | None = None
+    rate_limited = False
+    for attempt in range(MAX_ATTEMPTS):
+        try:
+            with httpx.Client(timeout=CALL_TIMEOUT_S) as client:
+                resp = client.post(url, json=body, headers=headers)
+            if resp.status_code == 429:
+                rate_limited = True
+                last = ExtractionError("rate_limited", "gemini 429")
+                time.sleep(min(2.0 ** (attempt + 1), 20) + random.uniform(0, 1))
+                continue
+            if resp.status_code >= 500:
+                last = ExtractionError("api_error", f"gemini {resp.status_code}")
+                time.sleep(2**attempt + random.uniform(0, 1))
+                continue
+            if resp.status_code != 200:
+                raise ExtractionError("api_error", f"gemini {resp.status_code}: {resp.text[:200]}")
+            data = resp.json()
+            try:
+                text = data["candidates"][0]["content"]["parts"][0]["text"]
+                payload = _json.loads(text)
+            except (KeyError, IndexError, TypeError, ValueError) as e:
+                # safety block, empty candidate, or malformed JSON: no retry
+                raise ExtractionError("api_error", f"gemini returned no usable JSON: {e}") from e
+            return ledger_from_payload(payload, doc_id)
+        except httpx.TimeoutException as e:
+            last = e
+            time.sleep(1)
+        except httpx.HTTPError as e:  # DNS, connection reset, etc.
+            last = e
+            time.sleep(2**attempt + random.uniform(0, 1))
+    raise ExtractionError(
+        "rate_limited" if rate_limited else "timeout", str(last)
+    ) from last

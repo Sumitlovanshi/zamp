@@ -13,12 +13,27 @@ railway up                      # builds the Dockerfile and deploys
 railway domain                  # mints the public URL
 ```
 
-Live uploads need a model key — set it yourself so it never leaves your shell:
+Live uploads need a vision-model key — set it yourself so it never leaves
+your shell/dashboard. Either provider works (auto-detected; Anthropic wins
+if both are set, `TALLYPROOF_PROVIDER` overrides):
 
 ```bash
-railway variables --set ANTHROPIC_API_KEY=sk-ant-...
-railway variables --set TALLYPROOF_DAILY_BUDGET=300   # optional, default 300 calls/day
+railway variables --set ANTHROPIC_API_KEY=sk-ant-...       # paid, strongest
+# — or —
+railway variables --set GEMINI_API_KEY=...                  # free tier works for a demo
+railway variables --set TALLYPROOF_DAILY_BUDGET=200         # stays inside Gemini's ~250 req/day
 ```
+
+On Render: dashboard → your service → Environment → add `GEMINI_API_KEY`
+(and optionally `TALLYPROOF_DAILY_BUDGET=200`), then redeploy.
+
+**Free-Gemini caveats, honestly:** the free tier is rate-limited (~10
+requests/minute, ~250/day for `gemini-2.5-flash`) — the app's own per-IP
+limit (12/hour) and daily budget keep a public demo inside that. And
+Google may use free-tier API data for product improvement; receipts here
+are EXIF-stripped and PII-light by design, and the app's privacy footer
+already tells uploaders not to submit other people's personal data — but
+if that policy bothers you, use a paid key of either provider.
 
 Without the key the app runs in **gallery-only mode** — clearly labelled,
 and the six sample receipts carry the full experience (they are

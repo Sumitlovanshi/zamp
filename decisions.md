@@ -312,3 +312,32 @@ anywhere), so the choice is deliberately low-stakes.
 **Cut.** Multi-region, autoscaling, CDN — the gallery's statelessness
 makes them irrelevant at this scale. Multi-replica is *excluded by
 design*, not just cut: sessions live in process memory.
+
+## 15. Provider-pluggable extraction; free-tier Gemini for the public demo
+
+**Decision.** The vision extractor dispatches on whichever key is present
+(`ANTHROPIC_API_KEY` or `GEMINI_API_KEY`; `TALLYPROOF_PROVIDER` forces one),
+with the Gemini path implemented as ~90 lines of plain REST against the same
+prompt, the same Ledger contract, and the same retry discipline. The hosted
+demo runs on Gemini's free tier so live uploads cost nothing to operate.
+
+**Alternatives.** Anthropic-only (the original build — uploads paused on the
+free deployment); a local ONNX OCR model baked into the image (no key at
+all); an abstraction layer (LiteLLM) over many providers.
+
+**Reasoning.** This is the payoff of decision 7: the model's only verb is
+*transcribe*, and verdicts are produced exclusively by the network-free
+solver — so the provider swap is provably cosmetic to correctness (a test
+runs the Gemini path against a mock transport and asserts the resulting
+ledger flows into the same solver verdicts). Plain REST beat a second SDK
+because it is one endpoint, and beat LiteLLM because an abstraction layer
+for two providers is scaffolding without a building. Local OCR was cut in
+decision 2's spirit: it adds ~100 MB to the image and a quality cliff for
+zero marginal honesty — gallery-only mode already covers the no-key case.
+The app-side daily budget (default 200 on the demo) keeps a public endpoint
+inside the free tier's ~250 requests/day, and the free tier's data-usage
+policy is disclosed in DEPLOY.md rather than discovered.
+
+**Cut.** Any per-provider verdict differences (impossible by construction),
+provider fallback chains (a demo needs one working path, not a router), and
+key handling anywhere outside the operator's own dashboard.
