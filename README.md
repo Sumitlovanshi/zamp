@@ -96,10 +96,13 @@ make test                   # 58 tests in seconds — no key, no Docker, fully o
 make run                    # http://localhost:8123 — gallery works fully without a key
 ```
 
-Live uploads additionally need a model key in the environment —
-`ANTHROPIC_API_KEY=sk-ant-... make run` — the vision model transcribes;
-it never verifies (see below). Without a key the app runs in clearly
-labelled gallery-only mode, which carries the entire experience.
+Live uploads additionally need a vision-model key in the environment —
+either `ANTHROPIC_API_KEY` or `GEMINI_API_KEY` (Gemini's free tier at
+[aistudio.google.com](https://aistudio.google.com/apikey) covers a demo).
+The model only transcribes; it never verifies (see below) — which is why
+the provider is swappable without touching a single verdict. Without a
+key the app runs in clearly labelled gallery-only mode, which carries
+the entire experience.
 
 Prefer Docker? `docker build -t tallyproof . && docker run -p 8080:8080 tallyproof`
 — same app, no venv.

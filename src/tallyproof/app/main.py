@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import io
 import json
-import os
 import re
 import secrets
 import time
@@ -77,7 +76,7 @@ def _ctx(request: Request, **kw) -> dict:
         "request": request,
         "n_batch": len(session.docs) if session else 0,
         "budget_remaining": BUDGET.remaining,
-        "have_key": bool(os.environ.get("ANTHROPIC_API_KEY")),
+        "have_key": vlm.configured_provider() is not None,
         "ttl_minutes": SESSION_TTL_S // 60,
         **kw,
     }
@@ -202,7 +201,7 @@ def upload(request: Request, file: UploadFile):
     s = _session(request)
     ip = _client_ip(request)
 
-    if not os.environ.get("ANTHROPIC_API_KEY"):
+    if vlm.configured_provider() is None:
         return _error(request, 503,
                       "No model key is configured, so live extraction is off. "
                       "The six sample receipts carry the full experience — "
@@ -338,11 +337,12 @@ def batch_export(request: Request):
 
 @app.get("/status", response_class=HTMLResponse)
 def status(request: Request):
+    provider = vlm.configured_provider()
     return templates.TemplateResponse(
         request, "status.html",
         _ctx(request, store=STORE.stats(),
-             mode="live" if os.environ.get("ANTHROPIC_API_KEY") and BUDGET.remaining > 0
-                  else "gallery-only"),
+             provider=provider,
+             mode="live" if provider and BUDGET.remaining > 0 else "gallery-only"),
     )
 
 

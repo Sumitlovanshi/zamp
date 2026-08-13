@@ -11,6 +11,9 @@ services:
     autoDeploy: true
     envVars:
       - key: ANTHROPIC_API_KEY
-        sync: false        # Render prompts you for it privately; omit for gallery-only mode
+        sync: false        # either key enables uploads; omit both for gallery-only mode
+      - key: GEMINI_API_KEY
+        sync: false        # free tier works for a demo (see DEPLOY.md for the caveats)
       - key: TALLYPROOF_DAILY_BUDGET
-        value: "300"
+        value: "200"       # keeps a free Gemini key inside its ~250 requests/day
+

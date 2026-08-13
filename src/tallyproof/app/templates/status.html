@@ -6,6 +6,7 @@
   <table class="batch-table">
     <tbody>
       <tr><td>mode</td><td><b>{{ mode }}</b></td></tr>
+      <tr><td>extraction provider</td><td>{{ provider or "none configured" }}</td></tr>
       <tr><td>model budget remaining today</td><td>{% if have_key %}{{ budget_remaining }} calls{% else %}n/a — no model key configured{% endif %}</td></tr>
       <tr><td>live sessions</td><td>{{ store.sessions }}</td></tr>
       <tr><td>documents in memory</td><td>{{ store.documents }}</td></tr>
