@@ -135,3 +135,23 @@ def test_session_cap_only_counts_document_holders():
         store.session(None)
     assert store.stats()["sessions"] == 1  # ...but none of them occupy the cap
     assert store.session(owner.sid).docs["d1"].name == "mine"  # owner survives
+
+
+# ---- extraction failure: token refunded, budget attempt stays spent -------
+def test_extraction_failure_refunds_token_not_budget(client, monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
+
+    def boom(img, mt, doc_id):
+        raise main.vlm.ExtractionError("api_error", "provider rejected the call")
+
+    monkeypatch.setattr(main.vlm, "extract", boom)
+    ip = "203.0.113.77"
+    budget_before = limits.BUDGET.remaining
+    for _ in range(limits.BURST + 2):  # more failures than the burst allows
+        r = client.post("/upload", files={"file": ("r.jpg", tiny_jpeg(), "image/jpeg")},
+                        headers={"X-Forwarded-For": ip})
+        assert r.status_code == 502  # never 429: the visitor's token came back
+    # every attempt burned budget — provider load is capped by attempts
+    assert limits.BUDGET.remaining == budget_before - (limits.BURST + 2)
+    limits.LIMITER._buckets.clear()
+    limits.BUDGET._day = ""  # reset the day counter for other tests
