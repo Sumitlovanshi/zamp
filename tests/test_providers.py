@@ -113,3 +113,30 @@ def test_gemini_safety_block_is_api_error_without_retry(monkeypatch):
         vlm._extract_gemini(b"x", "image/jpeg", "t")
     assert e.value.kind == "api_error"
     assert len(calls) == 1  # malformed output is not retried into quota burn
+
+
+def test_gemini_model_retired_falls_back_to_alias(monkeypatch):
+    """If Google retires the configured model (404), the extractor retries
+    once on the gemini-flash-latest alias instead of failing the visitor."""
+    monkeypatch.setenv("GEMINI_API_KEY", "test-g")
+    monkeypatch.setattr(vlm.time, "sleep", lambda s: None)
+    urls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        urls.append(request.url.path)
+        if vlm.GEMINI_FALLBACK_MODEL not in request.url.path:
+            return httpx.Response(404, json={"error": {"message": "model retired"}})
+        return httpx.Response(200, json=gemini_response({
+            "merchant": None, "currency_hint": None,
+            "rows": [{"name": "x", "qty": None, "unitprice": None, "price": "5"}],
+            "subtotal": "5", "tax": None, "service": None, "discount": None,
+            "total": None, "cash": None, "change": None, "menuqty": None,
+        }))
+
+    transport = httpx.MockTransport(handler)
+    real_client = httpx.Client
+    monkeypatch.setattr(httpx, "Client",
+                        lambda **kw: real_client(transport=transport, **kw))
+    led = vlm._extract_gemini(b"x", "image/jpeg", "t")
+    assert led.rows[0].price.surface == "5"
+    assert any(vlm.GEMINI_FALLBACK_MODEL in u for u in urls)

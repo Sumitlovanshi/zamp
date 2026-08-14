@@ -249,6 +249,9 @@ def upload(request: Request, file: UploadFile):
     try:
         ledger = vlm.extract(image, media_type, doc_id)
     except vlm.ExtractionError as e:
+        # detail goes to the server log (the operator's Render/console view),
+        # never to the page — visitors get honesty, not internals
+        print(f"extraction failed [{e.kind}] doc={doc_id}: {e}", flush=True)
         msg = {
             "rate_limited": "The model provider rate-limited us mid-call. "
                             "Your quota was not consumed twice; retry shortly.",
@@ -256,6 +259,10 @@ def upload(request: Request, file: UploadFile):
                        "if it persists the provider is having a day.",
             "api_error": "The model call failed. Nothing was stored.",
         }.get(e.kind, "Extraction failed. Nothing was stored.")
+        # the visitor gets their per-IP token back (they received nothing),
+        # but the daily budget stays spent — a model call WAS attempted, and
+        # the budget's job is to cap attempts, not successes
+        LIMITER.refund(ip)
         return _error(request, 502, msg)
 
     if not ledger.cells():

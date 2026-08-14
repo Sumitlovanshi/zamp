@@ -248,21 +248,19 @@ GEMINI_SCHEMA = {
 }
 
 
-def _extract_gemini(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
+GEMINI_FALLBACK_MODEL = "gemini-flash-latest"  # alias tracking the current flash
+
+
+def gemini_request_body(image_bytes: bytes, media_type: str) -> dict:
+    """The exact request the extractor sends — factored out so the key-check
+    diagnostic (scripts/check_gemini_key.py) tests the very same bytes."""
     import base64
-    import json as _json
 
-    import httpx
-
-    url = (
-        "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"{GEMINI_MODEL}:generateContent"
-    )
-    body = {
+    return {
         "contents": [{
             "parts": [
-                {"inline_data": {
-                    "mime_type": media_type,
+                {"inlineData": {  # canonical camelCase per the REST docs
+                    "mimeType": media_type,
                     "data": base64.b64encode(image_bytes).decode(),
                 }},
                 {"text": PROMPT},
@@ -274,12 +272,25 @@ def _extract_gemini(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
             "responseSchema": GEMINI_SCHEMA,
         },
     }
+
+
+def _extract_gemini(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
+    import json as _json
+
+    import httpx
+
+    body = gemini_request_body(image_bytes, media_type)
     # key travels in a header, never in the URL (query strings end up in logs)
     headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"]}
 
     last: Exception | None = None
     rate_limited = False
+    model = GEMINI_MODEL
     for attempt in range(MAX_ATTEMPTS):
+        url = (
+            "https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{model}:generateContent"
+        )
         try:
             with httpx.Client(timeout=CALL_TIMEOUT_S) as client:
                 resp = client.post(url, json=body, headers=headers)
@@ -292,8 +303,14 @@ def _extract_gemini(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
                 last = ExtractionError("api_error", f"gemini {resp.status_code}")
                 time.sleep(2**attempt + random.uniform(0, 1))
                 continue
+            if resp.status_code == 404 and model != GEMINI_FALLBACK_MODEL:
+                # the configured model was retired/renamed under us: fall back
+                # to the alias that tracks the current flash release, once
+                last = ExtractionError("api_error", f"model {model} not found")
+                model = GEMINI_FALLBACK_MODEL
+                continue
             if resp.status_code != 200:
-                raise ExtractionError("api_error", f"gemini {resp.status_code}: {resp.text[:200]}")
+                raise ExtractionError("api_error", f"gemini {resp.status_code}: {resp.text[:300]}")
             data = resp.json()
             try:
                 text = data["candidates"][0]["content"]["parts"][0]["text"]
@@ -308,6 +325,8 @@ def _extract_gemini(image_bytes: bytes, media_type: str, doc_id: str) -> Ledger:
         except httpx.HTTPError as e:  # DNS, connection reset, etc.
             last = e
             time.sleep(2**attempt + random.uniform(0, 1))
+    if isinstance(last, ExtractionError) and last.kind == "api_error":
+        raise last
     raise ExtractionError(
         "rate_limited" if rate_limited else "timeout", str(last)
     ) from last
